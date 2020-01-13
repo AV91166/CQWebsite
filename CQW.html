@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="FontStyles.css" id="v7.languages.css">
+        <meta charset="utf-8"/>
+        <meta id="MobileViewport" name="viewport" content="width=980, user-scalable=yes"/>
+        
+        <link rel="Icon" href="CQLogo.jpg" type="image/x-icon">
+
+        <style type="text/css">
+            body{font-size:10px;font-family:Arial,Helvetica,sans-serif}
+
+            textarea{font-family:Helvetica,Arial,sans-serif;box-sizing:border-box}
+
+            ol,ul{list-style:none}
+
+            table{border-collapse:collapse;border-spacing:0}
+
+            a{cursor:pointer;text-decoration:none}
+
+            body,html{height:100%}
+
+            body{overflow-x:auto;overflow-y:scroll}
+
+            body.overflowHidden{overflow:hidden}
+
+            .testStyles{overflow-y:hidden}
+
+            .reset-button{background:0 0;border:0;outline:0;color:inherit;font:inherit;line-height:normal;overflow:visible;padding:0;-webkit-appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
+
+            :focus{outline:0}
+
+            .wixSiteProperties{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+            .SITE_ROOT{min-height:100%;position:relative;margin:0 auto}
+
+            .POPUPS_ROOT{left:0;top:0;width:100vw;height:100%;overflow-x:auto;overflow-y:scroll;position:fixed;z-index:99999}
+
+            .POPUPS_ROOT.mobile{z-index:1005;-webkit-overflow-scrolling:touch}
+
+            .POPUPS_ROOT.responsive .POPUPS_WRAPPER{position:absolute;top:0;left:0;width:100%;height:100%}
+
+            .POPUPS_ROOT:not(.responsive) .POPUPS_WRAPPER{position:relative;overflow:auto}
+
+            .POPUPS_ROOT:not(.responsive) .POPUPS_WRAPPER>div{margin:0 auto}
+
+            .auto-generated-link{color:inherit}
+
+            .warmup .hidden-on-warmup{visibility:hidden}
+
+            body:not([data-js-loaded]) [data-hide-prejs]{visibility:hidden}
+
+            html.device-phone body{overflow-y:auto}
+
+            html.device-mobile-optimized.device-android{margin-bottom:1px}
+
+            html.device-mobile-optimized.blockSiteScrolling>body{position:fixed;width:100%}
+
+            html.device-mobile-optimized.media-zoom-mode>body{touch-action:manipulation}
+
+            html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER{height:100%;overflow:hidden}
+
+            html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER>.noop{height:100%}
+
+            html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER>.noop>.siteAspectsContainer{height:100%;z-index:1005}
+
+            .siteAspectsContainer{position:absolute;top:0;margin:0 auto;left:0;right:0}
+
+            body.prewarmup #SITE_ROOT{overflow-x:hidden;overflow-y:hidden}
+
+            body.device-mobile-optimized{overflow-x:hidden;overflow-y:scroll}
+
+            body.device-mobile-optimized.qa-mode{overflow-y:auto}
+
+            body.device-mobile-optimized #SITE_CONTAINER{width:320px;overflow-x:visible;margin:0 auto;position:relative}
+
+            body.device-mobile-optimized>*{max-width:100%!important}
+
+            body.device-mobile-optimized .SITE_ROOT{overflow-x:hidden;overflow-y:hidden}
+
+            body.device-mobile-non-optimized #SITE_CONTAINER>:not(.mobile-non-optimized-overflow) .SITE_ROOT{overflow-x:hidden;overflow-y:auto}
+
+            body.device-mobile-non-optimized.fullScreenMode{background-color:#5f6360}
+
+            body.device-mobile-non-optimized.fullScreenMode #MOBILE_ACTIONS_MENU,body.device-mobile-non-optimized.fullScreenMode #SITE_BACKGROUND,body.device-mobile-non-optimized.fullScreenMode .SITE_ROOT{visibility:hidden}
+
+            body.fullScreenMode{overflow-x:hidden!important;overflow-y:hidden!important}
+
+            body.fullScreenMode.device-mobile-optimized #TINY_MENU{opacity:0;pointer-events:none}
+
+            body.fullScreenMode-scrollable.device-mobile-optimized{overflow-x:hidden!important;overflow-y:auto!important}
+
+            body.fullScreenMode-scrollable.device-mobile-optimized #masterPage,body.fullScreenMode-scrollable.device-mobile-optimized .SITE_ROOT{overflow-x:hidden!important;overflow-y:hidden!important}
+
+            body.fullScreenMode-scrollable.device-mobile-optimized #SITE_BACKGROUND,body.fullScreenMode-scrollable.device-mobile-optimized #masterPage{height:auto!important}
+
+            body.fullScreenMode-scrollable.device-mobile-optimized #masterPage.mesh-layout{height:0!important}
+
+            .fullScreenOverlay{z-index:1005;position:fixed;left:0;top:-60px;right:0;bottom:0;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;overflow-y:hidden}
+
+            .fullScreenOverlay>.fullScreenOverlayContent{margin:0 auto;position:absolute;right:0;top:60px;left:0;bottom:0;overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
+
+            .mobile-actions-menu-wrapper{z-index:1000}
+
+            body[contenteditable]{overflow-x:auto;overflow-y:auto}
+
+            .bold{font-weight:700}
+
+            .italic{font-style:italic}
+
+            .underline{text-decoration:underline}
+
+            .lineThrough{text-decoration:line-through}
+
+            .singleLineText{white-space:nowrap;text-overflow:ellipsis}
+
+            .alignLeft{text-align:left}
+
+            .alignCenter{text-align:center}
+
+            .alignRight{text-align:right}
+
+            .alignJustify{text-align:justify}
+
+            ol.font_100,ul.font_100{color:#080808;font-family:'Arial, Helvetica, sans-serif',serif;font-size:10px;font-style:normal;font-variant:normal;font-weight:400;margin:0;text-decoration:none;line-height:normal;letter-spacing:normal}
+
+            ol.font_100 li,ul.font_100 li{margin-bottom:12px}
+
+            letter{position:relative;display:inline-block}
+
+            word{display:inline-block;white-space:nowrap}
+
+            letter.space,word.space{display:inline}
+
+            ol.wix-list-text-align,ul.wix-list-text-align{list-style-position:inside}
+
+            ol.wix-list-text-align h1,ol.wix-list-text-align h2,ol.wix-list-text-align h3,ol.wix-list-text-align h4,ol.wix-list-text-align h5,ol.wix-list-text-align h6,ol.wix-list-text-align p,ul.wix-list-text-align h1,ul.wix-list-text-align h2,ul.wix-list-text-align h3,ul.wix-list-text-align h4,ul.wix-list-text-align h5,ul.wix-list-text-align h6,ul.wix-list-text-align 
+            p{display:inline}
+
+            #popoverLayer{z-index:100}
+
+            .wixapps-less-spacers-align.ltr{text-align:left}
+
+            .wixapps-less-spacers-align.center{text-align:center}
+
+            .wixapps-less-spacers-align.rtl{text-align:right}
+
+            .wixapps-less-spacers-align>a,.wixapps-less-spacers-align>div{display:inline-block!important}
+
+            .flex_display{display:-webkit-box;display:-webkit-flex;display:flex}
+
+            .flex_vbox{box-sizing:border-box;padding-top:.01em;padding-bottom:.01em}
+
+            a.wixAppsLink img{cursor:pointer}
+
+            .singleLine{white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;word-wrap:normal}
+
+            [data-z-counter]{z-index:0}
+
+            [data-z-counter="0"]{z-index:auto}
+
+            .circle-preloader{-webkit-animation:semi-rotate 1s 1ms linear infinite;animation:semi-rotate 1s 1ms linear infinite;height:30px;left:50%;margin-left:-15px;margin-top:-15px;overflow:hidden;position:absolute;top:50%;-webkit-transform-origin:100% 50%;transform-origin:100% 50%;width:15px}
+
+            .circle-preloader::before{content:'';top:0;left:0;right:-100%;bottom:0;border:3px solid currentColor;border-color:currentColor transparent transparent currentColor;border-radius:50%;position:absolute;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:inner-rotate .5s 1ms linear infinite alternate;animation:inner-rotate .5s 1ms linear infinite alternate;color:#7fccf7}
+
+            .circle-preloader::after{content:'';top:0;left:0;right:-100%;bottom:0;border:3px solid currentColor;border-color:currentColor transparent transparent currentColor;border-radius:50%;position:absolute;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:inner-rotate .5s 1ms linear infinite alternate;animation:inner-rotate .5s 1ms linear infinite alternate;color:#3899ec;opacity:0}
+
+            .circle-preloader.white::before{color:#f0f0f0}
+
+            .circle-preloader.white::after{color:#dcdcdc}@-webkit-keyframes inner-rotate{to{opacity:1;-webkit-transform:rotate(115deg);transform:rotate(115deg)}}@keyframes inner-rotate{to{opacity:1;-webkit-transform:rotate(115deg);transform:rotate(115deg)}}@-webkit-keyframes semi-rotate{from{-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-transform:rotate(180deg);transform:rotate(180deg)}45%{-webkit-transform:rotate(198deg);transform:rotate(198deg)}55%{-webkit-transform:rotate(234deg);transform:rotate(234deg)}to{-webkit-transform:rotate(540deg);transform:rotate(540deg)}}@keyframes semi-rotate{from{-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-transform:rotate(180deg);transform:rotate(180deg)}45%{-webkit-transform:rotate(198deg);transform:rotate(198deg)}55%{-webkit-transform:rotate(234deg);transform:rotate(234deg)}to{-webkit-transform:rotate(540deg);transform:rotate(540deg)}}
+
+            .hidden-comp-ghost-mode{opacity:.5}
+
+            .collapsed-comp-mode::after{position:absolute;top:0;bottom:0;left:0;right:0;content:'';background:-webkit-repeating-linear-gradient(135deg,transparent,transparent 49%,#2b5672 40%,#2b5672 40%,transparent 51%);background:repeating-linear-gradient(-45deg,transparent,transparent 49%,#2b5672 40%,#2b5672 40%,transparent 51%);background-size:6px 6px;background-repeat:repeat}
+
+            .g-transparent-a:link,.g-transparent-a:visited{border-color:transparent}
+
+            .transitioning-comp *{transition:inherit!important;-webkit-transition:inherit!important}
+
+            .selectionSharerContainer{position:absolute;background-color:#fff;box-shadow:0 4px 10px 0 rgba(57,86,113,.24);width:142px;height:45px;border-radius:100px;text-align:center}
+
+            .selectionSharerContainer:after{content:"";position:absolute;bottom:-10px;left:42%;border-width:10px 10px 0;border-style:solid;border-color:#fff transparent;display:block;width:0}
+
+            .selectionSharerContainer .selectionSharerOption{display:inline-block;cursor:pointer;vertical-align:top;padding:13px 11px 11px 13px;margin:1px;z-index:-1}
+
+            .selectionSharerContainer .selectionSharerVerticalSeparator{margin-top:9px;margin-bottom:18px;background-color:#eaf7ff;height:26px;width:1px;display:inline-block}
+
+            .visual-focus-on .focus-ring:not(.has-custom-focus):focus,.visual-focus-on .focus-ring:not(.has-custom-focus):focus~.wixSdkShowFocusOnSibling{box-shadow:inset 0 0 0 2px #1f77ff,inset 0 0 0 1px #fff}
+
+            body.prewarmup .hidden-during-prewarmup{visibility:hidden}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid]{display:-ms-grid;display:grid;-ms-grid-rows:max-content max-content min-content max-content;grid-template-rows:-webkit-max-content -webkit-max-content -webkit-min-content -webkit-max-content;grid-template-rows:max-content max-content min-content max-content;-ms-grid-columns:100%;grid-template-columns:100%;-webkit-box-align:start;-webkit-align-items:start;align-items:start;-webkit-box-pack:stretch;-webkit-justify-content:stretch;justify-content:stretch}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #PAGES_CONTAINER,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_FOOTER,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_FOOTER-placeholder,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_HEADER,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_HEADER-placeholder,#masterPage.mesh-layout[data-mesh-layout=grid] #SOSP_CONTAINER_CUSTOM_ID[data-state~=mobileView],#masterPage.mesh-layout[data-mesh-layout=grid] #soapAfterPagesContainer,#masterPage.mesh-layout[data-mesh-layout=grid] #soapBeforePagesContainer{-ms-grid-column:1;-ms-grid-row-align:start;-ms-grid-column-align:start}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #SITE_HEADER,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_HEADER-placeholder{-ms-grid-row:1;grid-area:1/1/2/2}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #SOSP_CONTAINER_CUSTOM_ID[data-state~=mobileView]{-ms-grid-row:2;grid-area:2/1/3/2}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #PAGES_CONTAINER,#masterPage.mesh-layout[data-mesh-layout=grid] #soapAfterPagesContainer,#masterPage.mesh-layout[data-mesh-layout=grid] #soapBeforePagesContainer{-ms-grid-row:3;grid-area:3/1/4/2}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #soapAfterPagesContainer,#masterPage.mesh-layout[data-mesh-layout=grid] #soapBeforePagesContainer{width:100%}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #PAGES_CONTAINER{-webkit-align-self:stretch;align-self:stretch}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] main#PAGES_CONTAINER{display:block}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #SITE_FOOTER,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_FOOTER-placeholder{-ms-grid-row:4;grid-area:4/1/5/2}
+
+            #masterPage.mesh-layout[data-mesh-layout=grid] #PAGES_CONTAINERcenteredContent,#masterPage.mesh-layout[data-mesh-layout=grid] #PAGES_CONTAINERinlineContent,#masterPage.mesh-layout[data-mesh-layout=grid] #SITE_PAGES{height:100%}
+
+            #masterPage.mesh-layout.desktop>*{width:100%}
+
+            #masterPage.mesh-layout #PAGES_CONTAINER,#masterPage.mesh-layout #SITE_FOOTER,#masterPage.mesh-layout #SITE_HEADER,#masterPage.mesh-layout #SOSP_CONTAINER_CUSTOM_ID[data-state~=mobileView],#masterPage.mesh-layout #masterPageinlineContent{position:relative}
+
+            #masterPage.mesh-layout #SITE_FOOTER-placeholder,#masterPage.mesh-layout #SITE_HEADER-placeholder{display:none}
+
+            #masterPage.mesh-layout #SITE_HEADER[data-state~=fixedPosition]~#SITE_HEADER-placeholder{display:block}
+
+            #masterPage.mesh-layout #SITE_FOOTER[data-state~=fixedPosition]~#SITE_FOOTER-placeholder{display:block}
+
+            #masterPage.mesh-layout #SITE_PAGES{height:auto;position:relative}
+
+            #SITE_ROOT img:not([src]){visibility:hidden}
+
+            #SITE_ROOT svg img:not([src]){visibility:visible}
+        </style>
+               
+        <title>HOME | Communiqué</title>
+    </head>
+    
+    <body class="prewarmup">
+
+    <div id="SITE_CONTAINER">
+        <style type="text/css" data-styleid="uploadedFonts"> 
+        </style>
+
+        <div>
+            <style type="text/css" data-styleid="theme_fonts">.font_0 {font: normal normal normal 22px/1.4em 'noticia text',serif ;color:#00305B;} 
+                .font_1 {font: normal normal normal 13px/1.4em raleway,sans-serif ;color:#000000;} 
+                .font_2 {font: normal normal normal 42px/1.4em raleway,sans-serif ;color:#00305B;} 
+                .font_3 {font: normal normal normal 60px/1.4em raleway,sans-serif ;color:#00305B;} 
+                .font_4 {font: normal normal normal 40px/1.4em raleway,sans-serif ;color:#00305B;} 
+                .font_5 {font: normal normal normal 30px/1.4em raleway,sans-serif ;color:#00305B;} 
+                .font_6 {font: normal normal normal 20px/1.4em 'open sans',sans-serif ;color:#00305B;} 
+                .font_7 {font: normal normal normal 18px/1.4em 'open sans',sans-serif ;color:#102E52;} 
+                .font_8 {font: normal normal normal 16px/1.4em 'open sans',sans-serif ;color:#00305B;} 
+                .font_9 {font: normal normal normal 14px/1.4em 'open sans',sans-serif ;color:#0F4C85;} 
+                .font_10 {font: normal normal normal 12px/1.4em 'open sans',sans-serif ;color:#000000;}
+            </style>
+
+            <style type="text/css" data-styleid="theme_colors">.color_0 {color: #FFFFFF;}
+                .backcolor_0 {background-color: #FFFFFF;}
+                .color_1 {color: #FFFFFF;}
+                .backcolor_1 {background-color: #FFFFFF;}
+                .color_2 {color: #000000;}
+                .backcolor_2 {background-color: #000000;}
+                .color_3 {color: #ED1C24;}
+                .backcolor_3 {background-color: #ED1C24;}
+                .color_4 {color: #0088CB;}
+                .backcolor_4 {background-color: #0088CB;}
+                .color_5 {color: #FFCB05;}
+                .backcolor_5 {background-color: #FFCB05;}
+                .color_6 {color: #727272;}
+                .backcolor_6 {background-color: #727272;}
+                .color_7 {color: #B0B0B0;}
+                .backcolor_7 {background-color: #B0B0B0;}
+                .color_8 {color: #FFFFFF;}
+                .backcolor_8 {background-color: #FFFFFF;}
+                .color_9 {color: #727272;}
+                .backcolor_9 {background-color: #727272;}
+                .color_10 {color: #B0B0B0;}
+                .backcolor_10 {background-color: #B0B0B0;}
+                .color_11 {color: #FFFFFF;}
+                .backcolor_11 {background-color: #FFFFFF;}
+                .color_12 {color: #DDDDDD;}
+                .backcolor_12 {background-color: #DDDDDD;}
+                .color_13 {color: #A0A0A0;}
+                .backcolor_13 {background-color: #A0A0A0;}
+                .color_14 {color: #555555;}
+                .backcolor_14 {background-color: #555555;}
+                .color_15 {color: #000000;}
+                .backcolor_15 {background-color: #000000;}
+                .color_16 {color: #EAF4F6;}
+                .backcolor_16 {background-color: #EAF4F6;}
+                .color_17 {color: #83B7E6;}
+                .backcolor_17 {background-color: #83B7E6;}
+                .color_18 {color: #377DBD;}
+                .backcolor_18 {background-color: #377DBD;}
+                .color_19 {color: #0F4C85;}
+                .backcolor_19 {background-color: #0F4C85;}
+                .color_20 {color: #00305B;}
+                .backcolor_20 {background-color: #00305B;}
+                .color_21 {color: #B7E6EB;}
+                .backcolor_21 {background-color: #B7E6EB;}
+                .color_22 {color: #90D1D8;}
+                .backcolor_22 {background-color: #90D1D8;}
+                .color_23 {color: #41B7C4;}
+                .backcolor_23 {background-color: #41B7C4;}
+                .color_24 {color: #2B7A83;}
+                .backcolor_24 {background-color: #2B7A83;}
+                .color_25 {color: #163D41;}
+                .backcolor_25 {background-color: #163D41;}
+                .color_26 {color: #D6F1AF;}
+                .backcolor_26 {background-color: #D6F1AF;}
+                .color_27 {color: #BCE485;}
+                .backcolor_27 {background-color: #BCE485;}
+                .color_28 {color: #8CD624;}
+                .backcolor_28 {background-color: #8CD624;}
+                .color_29 {color: #5D8F18;}
+                .backcolor_29 {background-color: #5D8F18;}
+                .color_30 {color: #2F470C;}
+                .backcolor_30 {background-color: #2F470C;}
+                .color_31 {color: #B8D7FC;}
+                .backcolor_31 {background-color: #B8D7FC;}
+                .color_32 {color: #95C2FA;}
+                .backcolor_32 {background-color: #95C2FA;}
+                .color_33 {color: #2F89F7;}
+                .backcolor_33 {background-color: #2F89F7;}
+                .color_34 {color: #1F5BA5;}
+                .backcolor_34 {background-color: #1F5BA5;}
+                .color_35 {color: #102E52;}
+                .backcolor_35 {background-color: #102E52;}
+                </style>
+        </div>
+        
+        <div id="CSS_CONTAINER">
+        </div>
+        
+        <div data-aid="stylesContainer">
+            <style type="text/css" data-styleid="style-k42jxzg8">
+
+                .style-k42jxzg8itemsContainer {width:calc(100% - 0px);height:calc(100% - 0px);white-space:nowrap;display:inline-block;overflow:visible;position:absolute;}
+                .style-k42jxzg8moreContainer {overflow:visible;display:inherit;white-space:nowrap;width:auto;background-color:rgba(255, 255, 255, 1);border-radius:0;  }
+                .style-k42jxzg8dropWrapper {z-index:99999;display:block;opacity:1;visibility:hidden;position:absolute;margin-top:7px;}
+                .style-k42jxzg8 > nav {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-k42jxzg8dropWrapper[data-dropMode="dropUp"] {margin-top:0;margin-bottom:7px;}
+                .style-k42jxzg8repeaterButton {height:100%;position:relative;box-sizing:border-box;display:inline-block;cursor:pointer;font:normal normal normal 13px/1.4em raleway,sans-serif ;}
+                .style-k42jxzg8repeaterButton[data-state~="header"] a,.style-k42jxzg8repeaterButton[data-state~="header"] div {cursor:default !important;}
+                .style-k42jxzg8repeaterButtonlinkElement {display:inline-block;height:100%;width:100%;}
+                .style-k42jxzg8repeaterButton_gapper {padding:0 5px;}
+                .style-k42jxzg8repeaterButtonlabel {display:inline-block;padding:0 10px;color:#000000;transition:color 0.4s ease 0s;}
+                .style-k42jxzg8repeaterButton[data-state~="drop"] {width:100%;display:block;}
+                .style-k42jxzg8repeaterButton[data-state~="drop"] .style-k42jxzg8repeaterButtonlabel {padding:0 .5em;}
+                .style-k42jxzg8repeaterButton[data-state~="over"] .style-k42jxzg8repeaterButtonlabel,.style-k42jxzg8repeaterButton[data-preview~="hover"] .style-k42jxzg8repeaterButtonlabel {color:#0F4C85;transition:color 0.4s ease 0s;}
+                .style-k42jxzg8repeaterButton[data-state~="selected"] .style-k42jxzg8repeaterButtonlabel,.style-k42jxzg8repeaterButton[data-preview~="active"] .style-k42jxzg8repeaterButtonlabel {color:#0F4C85;transition:color 0.4s ease 0s;}</style><style type="text/css" data-styleid="pc1">.pc1screenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .pc1[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
+                .pc1[data-state~="fixedPosition"].pc1_footer {top:auto;bottom:0;}
+                .pc1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .pc1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .pc1centeredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="siteBackground">.siteBackground {width:100%;position:absolute;}
+                .siteBackgroundbgBeforeTransition {position:absolute;top:0;}
+                .siteBackgroundbgAfterTransition {position:absolute;top:0;}</style><style type="text/css" data-styleid="style-ig6dzsjy">.style-ig6dzsjyscreenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dzsjy[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
+                .style-ig6dzsjy[data-state~="fixedPosition"].style-ig6dzsjy_footer {top:auto;bottom:0;}
+                .style-ig6dzsjybg {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dzsjyinlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dzsjycenteredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="style-ig6dxi9o">.style-ig6dxi9oscreenWidthBackground {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dxi9o[data-state~="fixedPosition"] {position:fixed !important;left:auto !important;z-index:50;}
+                .style-ig6dxi9o[data-state~="fixedPosition"].style-ig6dxi9o_footer {top:auto;bottom:0;}
+                .style-ig6dxi9o_bg {position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(255, 255, 255, 1);  border-top:0px solid rgba(0, 0, 0, 1);border-bottom:0px solid rgba(0, 0, 0, 1);}
+                .style-ig6dxi9obg {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dxi9o[data-state~="mobileView"] .style-ig6dxi9obg {left:10px;right:10px;}
+                .style-ig6dxi9o_bg-center {position:absolute;top:0px;right:0;bottom:0px;left:0;background-color:transparent;border-radius:0;}
+                .style-ig6dxi9oinlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ig6dxi9ocenteredContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="p1">.p1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .p1[data-state~="mobileView"] .p1bg {left:10px;right:10px;}
+                .p1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="strc1">.strc1:not([data-mobile-responsive]) > .strc1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .strc1[data-mobile-responsive] > .strc1inlineContent {position:relative;}
+                .strc1[data-responsive] {display:-ms-grid;display:grid;justify-content:center;grid-template-columns:100%;grid-template-rows:1fr;-ms-grid-columns:100%;-ms-grid-rows:1fr;}
+                .strc1[data-responsive] > .strc1inlineContent {display:flex;}
+                .strc1[data-responsive] > * {position:relative;grid-row-start:1;grid-column-start:1;grid-row-end:2;grid-column-end:2;-ms-grid-row-span:1;-ms-grid-column-span:1;margin:0 auto;}</style><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
+                .txtNew_override-left * {text-align:left !important;}
+                .txtNew_override-right * {text-align:right !important;}
+                .txtNew_override-center * {text-align:center !important;}
+                .txtNew_override-justify * {text-align:justify !important;}
+                .txtNew > * {pointer-events:auto;}
+                .txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
+                .txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
+                .txtNew ul {list-style-type:disc;}
+                .txtNew ol {list-style-type:decimal;}
+                .txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
+                .txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
+                .txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
+                .txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
+                .txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
+                .txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
+                .txtNew a {color:inherit;}</style><style type="text/css" data-styleid="ca1">.ca1_zoomedin {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;overflow:hidden;display:block;}
+                .ca1_zoomedout {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.cur), auto;}
+                .ca1link {display:block;overflow:hidden;}
+                .ca1img {overflow:hidden;}
+                .ca1[data-is-responsive=true] .ca1link,.ca1[data-is-responsive=true] .ca1img,.ca1[data-is-responsive=true] wix-image {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .ca1imgimage {position:static;box-shadow:#000 0 0 0;user-select:none;}</style><style type="text/css" data-styleid="style-jkksayet">.style-jkksayetbg {overflow:hidden;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(0, 48, 91, 0.4);}
+                .style-jkksayetinlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><style type="text/css" data-styleid="style-ifwacv3b1">.style-ifwacv3b1 {-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+                .style-ifwacv3b1link,.style-ifwacv3b1svg {position:absolute;top:0;right:0;bottom:0;left:0;}
+                .style-ifwacv3b1 svg {position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;margin:auto;}
+                .style-ifwacv3b1_non-scaling-stroke * {vector-effect:non-scaling-stroke;}
+                .style-ifwacv3b1_with-shadow svg {overflow:visible !important;}</style><style type="text/css" data-styleid="style-ifwav2c9">.style-ifwav2c9 {box-sizing:border-box;border-top:1px solid rgba(131, 183, 230, 0.65);height:0;}</style><style type="text/css" data-styleid="AutoWidthAnchorSkin">.AutoWidthAnchorSkin {pointer-events:none !important;}</style><style type="text/css" data-styleid="style-jgf1eeq7">.style-jgf1eeq7 {overflow:hidden;}
+                .style-jgf1eeq7 iframe {position:absolute;width:100%;height:100%;overflow:hidden;}
+                .style-jgf1eeq7 iframe:-webkit-full-screen {min-height:auto !important;}
+                .style-jgf1eeq7preloaderOverlay {position:absolute;top:0;left:0;color:#373737;width:100%;height:100%;}
+                .style-jgf1eeq7preloaderOverlaycontent {width:100%;height:100%;}
+                .style-jgf1eeq7unavailableMessageOverlay {position:absolute;top:0;left:0;color:#373737;width:100%;height:100%;}
+                .style-jgf1eeq7unavailableMessageOverlaycontent {width:100%;height:100%;background:rgba(255, 255, 255, 0.9);font-size:0;margin-top:5px;}
+                .style-jgf1eeq7unavailableMessageOverlaytextContainer {color:#373737;font-family:"Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;font-size:14px;display:inline-block;vertical-align:middle;width:100%;margin-top:10px;text-align:center;}
+                .style-jgf1eeq7unavailableMessageOverlayreloadButton {display:inline-block;}
+                .style-jgf1eeq7unavailableMessageOverlay a {color:#0099FF;text-decoration:underline;cursor:pointer;}
+                .style-jgf1eeq7unavailableMessageOverlayiconContainer {display:none;}
+                .style-jgf1eeq7unavailableMessageOverlaydismissButton {display:none;}
+                .style-jgf1eeq7unavailableMessageOverlaytextTitle {font-family:"Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;display:none;}
+                .style-jgf1eeq7unavailableMessageOverlay[data-state~="hideIframe"] .style-jgf1eeq7unavailableMessageOverlay_buttons {opacity:1;}
+                .style-jgf1eeq7unavailableMessageOverlay[data-state~="hideOverlay"] {display:none;}</style><style type="text/css" data-styleid="style-jxd8fwwl">.style-jxd8fwwl {display:flex;align-items:center;justify-content:center;}
+                @-moz-document url-prefix() {:invalid}
+                 {box-shadow:none;}
+                :-moz-submit-invalid {box-shadow:none;}
+                :-moz-ui-invalid {box-shadow:none;}
+                .style-jxd8fwwlform {border-radius:0px;  box-shadow:0 0 0 rgba(0, 0, 0, 0);  background-color:transparent;border:solid rgba(227, 227, 227, 1) 0px;}
+                .style-jxd8fwwl[data-is-responsive="false"] .style-jxd8fwwlform {width:100%;height:100%;}</style><style type="text/css" data-styleid="style-jxd8fwxb">.style-jxd8fwxb {position:relative;min-height:25px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;}
+                .style-jxd8fwxbinput {  border-radius:0;  font:normal normal normal 14px/1.4em 'open sans',sans-serif ;  -webkit-appearance:none;-moz-appearance:none;border-width:1px;  background-color:rgba(255, 255, 255, 1);box-sizing:border-box !important;color:#000000;border-style:solid;border-color:rgba(0, 0, 0, 0.55);padding:3px;margin:0;max-width:100%;-webkit-box-flex:1;-webkit-flex:1;flex:1;text-overflow:ellipsis;}
+                .style-jxd8fwxbinput[type="number"] {-moz-appearance:textfield;width:100%;}
+                .style-jxd8fwxbinput::-webkit-input-placeholder {color:#A0A0A0;}
+                .style-jxd8fwxbinput::-ms-input-placeholder {color:#A0A0A0;}
+                .style-jxd8fwxbinput::placeholder {color:#A0A0A0;}
+                .style-jxd8fwxbinput:hover,.style-jxd8fwxbinput[data-preview~="hover"] {border-width:1px;    background-color:rgba(131, 183, 230, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                :not(.style-jxd8fwxb_with-validation-indication) .style-jxd8fwxbinput:focus,:not(.style-jxd8fwxb_with-validation-indication) .style-jxd8fwxbinput[data-preview~="focus"] {border-width:1px;  background-color:rgba(221, 221, 221, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                .style-jxd8fwxb_with-validation-indication .style-jxd8fwxbinput:invalid {border-width:1px;  background-color:rgba(255, 64, 64, 0.1);border-style:solid;border-color:rgba(255, 64, 64, 1);}
+                .style-jxd8fwxb_with-validation-indication .style-jxd8fwxbinput:not(:invalid):focus,.style-jxd8fwxb_with-validation-indication .style-jxd8fwxbinput[data-preview~="focus"] {border-width:1px;  background-color:rgba(221, 221, 221, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                .style-jxd8fwxb_left-direction .style-jxd8fwxbinput {text-align:left;}
+                .style-jxd8fwxb_right-direction .style-jxd8fwxbinput {text-align:right;direction:rtl;}
+                .style-jxd8fwxb_center-direction .style-jxd8fwxbinput {text-align:center;}
+                .style-jxd8fwxb p {transition:opacity 0.5s ease 0s, border 0.5s ease 0s, color 0.5s ease 0s;  opacity:0;border-radius:0;  display:inline-block;position:absolute;right:0;bottom:100%;width:140px;padding:10px;font-size:13px;line-height:16px;background:#fff;box-shadow:0 1px 3px rgba(0, 0, 0, 0.6);}
+                .style-jxd8fwxb p:after {content:"▼";position:absolute;bottom:-12px;right:10px;color:#fff;text-shadow:0 1px 3px rgba(0, 0, 0, 0.6);border-radius:0;}
+                .style-jxd8fwxb[data-disabled="true"] .style-jxd8fwxbinput,.style-jxd8fwxb[data-preview~="disabled"] .style-jxd8fwxbinput {background-color:rgba(255, 255, 255, 1);color:#DBDBDB;border-width:1px;  border-style:solid;border-color:rgba(219, 219, 219, 1);}
+                .style-jxd8fwxb[data-error="true"] .style-jxd8fwxbinput,.style-jxd8fwxb[data-state~="invalid"] .style-jxd8fwxbinput,.style-jxd8fwxb[data-preview~="error"] .style-jxd8fwxbinput {border-width:1px;  background-color:rgba(255, 64, 64, 0.1);border-style:solid;border-color:rgba(255, 64, 64, 1);}
+                .style-jxd8fwxblabel {font:normal normal normal 16px/1.4em 'open sans',sans-serif ;  color:#FFFFFF;word-break:break-word;display:inline-block;line-height:1;}
+                .style-jxd8fwxb_required .style-jxd8fwxblabel::after {content:" *";color:rgba(255, 255, 255, 1);}</style><style type="text/css" data-styleid="style-jxd8fx2h1">.style-jxd8fx2h1 {display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;}
+                .style-jxd8fx2h1textarea {  border-radius:0;  font:normal normal normal 14px/1.4em 'open sans',sans-serif ;  border-width:1px;  resize:none;background-color:rgba(255, 255, 255, 1);box-sizing:border-box !important;color:#000000;border-style:solid;border-color:rgba(0, 0, 0, 0.55);padding:3px;margin:0;padding-top:0.75em;max-width:100%;min-width:100%;overflow-y:auto;-webkit-box-flex:1;-webkit-flex:1;flex:1;}
+                .style-jxd8fx2h1textarea::-webkit-input-placeholder {color:#A0A0A0;}
+                .style-jxd8fx2h1textarea::-ms-input-placeholder {color:#A0A0A0;}
+                .style-jxd8fx2h1textarea::placeholder {color:#A0A0A0;}
+                .style-jxd8fx2h1textarea:hover,.style-jxd8fx2h1textarea[data-preview~="hover"] {border-width:1px;    background-color:rgba(131, 183, 230, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                .style-jxd8fx2h1_left-direction .style-jxd8fx2h1textarea {text-align:left;}
+                .style-jxd8fx2h1_right-direction .style-jxd8fx2h1textarea {text-align:right;direction:rtl;}
+                .style-jxd8fx2h1_center-direction .style-jxd8fx2h1textarea {text-align:center;}
+                .style-jxd8fx2h1[data-disabled="true"] .style-jxd8fx2h1textarea,.style-jxd8fx2h1[data-preview~="disabled"] .style-jxd8fx2h1textarea {background-color:rgba(255, 255, 255, 1);color:#DBDBDB;border-width:1px;  border-style:solid;border-color:rgba(219, 219, 219, 1);}
+                :not(.style-jxd8fx2h1_with-validation-indication) .style-jxd8fx2h1textarea:focus,:not(.style-jxd8fx2h1_with-validation-indication) .style-jxd8fx2h1textarea[data-preview~="focus"] {border-width:1px;  background-color:rgba(221, 221, 221, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                .style-jxd8fx2h1_with-validation-indication .style-jxd8fx2h1textarea:invalid {border-width:1px;  background-color:rgba(255, 64, 64, 0.1);border-style:solid;border-color:rgba(255, 64, 64, 1);}
+                .style-jxd8fx2h1_with-validation-indication .style-jxd8fx2h1textarea:not(:invalid):focus,.style-jxd8fx2h1_with-validation-indication .style-jxd8fx2h1textarea[data-preview~="focus"] {border-width:1px;  background-color:rgba(221, 221, 221, 1);border-style:solid;border-color:rgba(0, 0, 0, 0.55);}
+                .style-jxd8fx2h1[data-error="true"] .style-jxd8fx2h1textarea,.style-jxd8fx2h1[data-preview~="error"] .style-jxd8fx2h1textarea {border-width:1px;  background-color:rgba(255, 64, 64, 0.1);border-style:solid;border-color:rgba(255, 64, 64, 1);}
+                .style-jxd8fx2h1label {font:normal normal normal 16px/1.4em 'open sans',sans-serif ;  color:#FFFFFF;word-break:break-word;display:inline-block;line-height:1;}
+                .style-jxd8fx2h1_required .style-jxd8fx2h1label::after {content:" *";color:rgba(255, 255, 255, 1);}</style><style type="text/css" data-styleid="style-k42jw3p9">.style-k42jw3p9 button.style-k42jw3p9link {width:100%;}
+                .style-k42jw3p9[data-state~="shouldUseFlex"] .style-k42jw3p9link,.style-k42jw3p9[data-state~="shouldUseFlex"] .style-k42jw3p9labelwrapper {text-align:initial;display:flex;align-items:center;}
+                .style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="center"] .style-k42jw3p9link,.style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="center"] .style-k42jw3p9labelwrapper {justify-content:center;}
+                .style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="left"] .style-k42jw3p9link,.style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="left"] .style-k42jw3p9labelwrapper {justify-content:flex-start;}
+                .style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="right"] .style-k42jw3p9link,.style-k42jw3p9[data-state~="shouldUseFlex"][data-state~="right"] .style-k42jw3p9labelwrapper {justify-content:flex-end;}
+                .style-k42jw3p9link {border-radius:0;  position:absolute;top:0;right:0;bottom:0;left:0;transition:border-color 0.4s ease 0s, background-color 0.4s ease 0s;  }
+                .style-k42jw3p9label {font:normal normal normal 16px/1.4em 'open sans',sans-serif ;  transition:color 0.4s ease 0s;  color:#FFFFFF;display:inline-block;margin:calc(-1 * 1px) 1px 0;position:relative;white-space:nowrap;}
+                .style-k42jw3p9[data-state~="shouldUseFlex"] .style-k42jw3p9label {margin:0;}
+                .style-k42jw3p9[data-disabled="false"] .style-k42jw3p9link {background-color:rgba(15, 76, 133, 1);border:solid rgba(255, 255, 255, 1) 1px;cursor:pointer !important;}
+                .style-k42jw3p9[data-disabled="false"]:active[data-state~="mobile"] .style-k42jw3p9link,.style-k42jw3p9[data-disabled="false"]:hover[data-state~="desktop"] .style-k42jw3p9link,.style-k42jw3p9[data-disabled="false"][data-preview~="hover"] .style-k42jw3p9link {background-color:rgba(0, 48, 91, 1);border-color:rgba(160, 160, 160, 1);}
+                .style-k42jw3p9[data-disabled="false"]:active[data-state~="mobile"] .style-k42jw3p9label,.style-k42jw3p9[data-disabled="false"]:hover[data-state~="desktop"] .style-k42jw3p9label,.style-k42jw3p9[data-disabled="false"][data-preview~="hover"] .style-k42jw3p9label {color:#FFFFFF;}
+                .style-k42jw3p9[data-disabled="true"] .style-k42jw3p9link,.style-k42jw3p9[data-preview~="disabled"] .style-k42jw3p9link {background-color:rgba(204, 204, 204, 1);border:solid rgba(0, 0, 0, 1) 1px;}
+                .style-k42jw3p9[data-disabled="true"] .style-k42jw3p9label,.style-k42jw3p9[data-preview~="disabled"] .style-k42jw3p9label {color:#FFFFFF;}</style><style type="text/css" data-styleid="lb1">.lb1[data-is-responsive~="false"] .lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:nowrap;}
+                .lb1[data-is-responsive~="false"][data-state~="mobileView"] .lb1itemsContainer {position:absolute;width:100%;height:100%;white-space:normal;}
+                .lb1[data-is-responsive~="true"] {display:table;}
+                .lb1[data-is-responsive~="true"] .lb1itemsContainer {display:-webkit-box;display:-webkit-flex;display:flex;}
+                .lb1itemsContainer > li:last-child {margin:0 !important;}
+                .lb1 a {display:block;height:100%;}
+                .lb1imageItemlink {cursor:pointer;}
+                .lb1imageItemimageimage {position:static;box-shadow:#000 0 0 0;user-select:none;}</style><style type="text/css" data-styleid="c2">.c2bg {overflow:hidden;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(0, 48, 91, 0.65);}
+                .c2inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                </style>
+
+                <style type="text/css" data-styleid="style-ifsa0dyl">
+
+                    .style-ifsa0dylbg {overflow:hidden;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(234, 244, 246, 1);}
+                    .style-ifsa0dylinlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}
+                </style>
+            </div>
+
+            <div class="noop visual-focus-on" style="position:relative">
+
+                <div id="SCROLL_TO_TOP" tabindex="-1" aria-label="top of page" role="region" style="height:0">
+                </div>
+
+                <div id="FONTS_CONTAINER">
+                </div>
+
+                <div id="SITE_BACKGROUND" style="height:100%;top:0;min-height:calc(100vh - 0px);bottom:;left:;right:;position:" class="siteBackground">
+
+                    <div id="SITE_BACKGROUND_previous_noPrev" data-position="absolute" data-align="" data-fitting="" class="siteBackgroundprevious">
+
+                        <div id="SITE_BACKGROUNDpreviousImage" class="siteBackgroundpreviousImage">
+                        </div>
+
+                        <div id="SITE_BACKGROUNDpreviousVideo" class="siteBackgroundpreviousVideo">
+                        </div>
+
+                        <div id="SITE_BACKGROUND_previousOverlay_noPrev" class="siteBackgroundpreviousOverlay">
+                        </div>
+
+                    </div>
+
+                    <div id="SITE_BACKGROUND_current_customBgImg22n1" style="top:0;height:100%;width:100%;background-color:rgba(255, 255, 255, 1);display:;position:absolute" data-position="absolute" data-align="bottom" data-fitting="legacy_tile" class="siteBackgroundcurrent">
+
+                        <div id="SITE_BACKGROUND_currentImage_customBgImg22n1" style="position:absolute;top:0;height:100%;width:100%" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage">
+                        </div>
+
+                        <div id="SITE_BACKGROUNDcurrentVideo" class="siteBackgroundcurrentVideo">
+                        </div>
+
+                        <div id="SITE_BACKGROUND_currentOverlay_customBgImg22n1" style="position:absolute;top:0;width:100%;height:100%" class="siteBackgroundcurrentOverlay">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="SITE_ROOT" class="SITE_ROOT" style="width:100%;min-width:980px;padding-bottom:0;top:0" aria-hidden="false">
+
+                    <div id="masterPage" class="mesh-layout" data-mesh-layout="grid">
+
+                        <header data-is-mobile="false" data-state="fixedPosition transition-allowed" data-site-width="980" data-header-top="0" style="position:fixed;margin-top:0;top:0;left:0;margin-left:0;width:100%;min-width:980px;bottom:;right:;z-index:50" class="style-ig6dxi9o" id="SITE_HEADER">
+
+                            <div style="left:0;width:100%" id="SITE_HEADERscreenWidthBackground" class="style-ig6dxi9oscreenWidthBackground">
+
+                                <div class="style-ig6dxi9o_bg">
+                                </div>
+                            </div>
+
+                            <div id="SITE_HEADERcenteredContent" class="style-ig6dxi9ocenteredContent">
+
+                                <div style="margin-left:calc((100% - 980px) / 2);width:980px" id="SITE_HEADERbg" class="style-ig6dxi9obg">
+
+                                    <div class="style-ig6dxi9o_bg-center">
+                                    </div>
+
+                                </div>
+
+                                <div id="SITE_HEADERinlineContent" class="style-ig6dxi9oinlineContent">
+
+                                    <style id="SITE_HEADER-mesh-styles">
+    
+                                        #SITE_HEADERinlineContent {
+                                            height: auto;
+                                            width: 100%;
+                                            position: relative;
+                                        }
+
+                                        #SITE_HEADERinlineContent-gridWrapper {
+                                            pointer-events: none;
+                                        }
+
+                                        #SITE_HEADERinlineContent-gridContainer {
+                                            position: static;
+                                            display: grid;
+                                            height: auto;
+                                            width: 100%;
+                                            min-height: auto;
+                                            grid-template-rows: 1fr;
+                                            grid-template-columns: 100%;
+                                        }
+
+                                        #comp-ifs9l515 {
+                                            position: relative;
+                                            margin: 22px 0px 20px calc((100% - 980px) * 0.5);
+                                            left: 15px;
+                                            grid-area: 1 / 1 / 2 / 2;
+                                            justify-self: start;
+                                            align-self: start;
+                                        }
+
+                                        #comp-ifs9egkl {
+                                            position: relative;
+                                            margin: 29px 0px 27px calc((100% - 980px) * 0.5);
+                                            left: 58px;
+                                            grid-area: 1 / 1 / 2 / 2;
+                                            justify-self: start;
+                                            align-self: start;
+                                        }
+
+                                        #DrpDwnMn0-jgk {
+                                            position: relative;
+                                            margin: 25px 0px 23px calc((100% - 980px) * 0.5);
+                                            left: 309px;
+                                            grid-area: 1 / 1 / 2 / 2;
+                                            justify-self: start;
+                                            align-self: start;
+                                        }
+
+                                        #SITE_HEADERcenteredContent {
+                                            position: relative;
+                                        }
+
+                                        #SITE_HEADERinlineContent-gridContainer > * {
+                                            pointer-events: auto;
+                                        }
+
+                                        #SITE_HEADERinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+                                            pointer-events: none;
+                                        }
+
+                                        #SITE_HEADERinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+                                            pointer-events: auto;}
+
+                                        </style>
+
+                                        <div id="SITE_HEADERinlineContent-gridWrapper" data-mesh-internal="true">
+
+                                            <div id="SITE_HEADERinlineContent-gridContainer" data-mesh-internal="true">
+
+                                                <div style="top:;bottom:;left:;right:;width:37px;height:36px;position:" title="" data-is-responsive="false" data-display-mode="full" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="36" class="ca1" id="comp-ifs9l515">
+
+                                                    <a style="cursor:pointer;width:37px;height:36px" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" id="comp-ifs9l515link" class="ca1link">
+
+                                                        <wix-image style="width:37px;height:36px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifs9l517&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;5bfb6f_e26c222c0bf648c39eeed8e67ae87701.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:191,&quot;height&quot;:182,&quot;alt&quot;:&quot;Logo&quot;,&quot;link&quot;:{&quot;type&quot;:&quot;PageLink&quot;,&quot;id&quot;:&quot;dataItem-ifwcfn55&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;pageId&quot;:{&quot;type&quot;:&quot;Page&quot;,&quot;id&quot;:&quot;c1537&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;HOME&quot;,&quot;hideTitle&quot;:true,&quot;icon&quot;:&quot;&quot;,&quot;descriptionSEO&quot;:&quot;&quot;,&quot;metaKeywordsSEO&quot;:&quot;&quot;,&quot;pageTitleSEO&quot;:&quot;&quot;,&quot;pageUriSEO&quot;:&quot;home&quot;,&quot;hidePage&quot;:false,&quot;isMobileLandingPage&quot;:false,&quot;underConstruction&quot;:false,&quot;tpaApplicationId&quot;:0,&quot;pageSecurity&quot;:{&quot;requireLogin&quot;:false,&quot;passwordDigest&quot;:&quot;&quot;,&quot;dialogLanguage&quot;:&quot;&quot;},&quot;isPopup&quot;:false,&quot;indexable&quot;:true,&quot;isLandingPage&quot;:false,&quot;pageBackgrounds&quot;:{&quot;desktop&quot;:{&quot;custom&quot;:true,&quot;ref&quot;:{&quot;type&quot;:&quot;BackgroundMedia&quot;,&quot;id&quot;:&quot;customBgImg22n1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;color&quot;:&quot;{color_11}&quot;,&quot;alignType&quot;:&quot;bottom&quot;,&quot;fittingType&quot;:&quot;legacy_tile&quot;,&quot;scrollType&quot;:&quot;scroll&quot;},&quot;isPreset&quot;:true},&quot;mobile&quot;:{&quot;custom&quot;:true,&quot;ref&quot;:{&quot;type&quot;:&quot;BackgroundMedia&quot;,&quot;id&quot;:&quot;customBgImg1hsr&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;color&quot;:&quot;{color_11}&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;fittingType&quot;:&quot;legacy_tile&quot;,&quot;scrollType&quot;:&quot;scroll&quot;},&quot;isPreset&quot;:true,&quot;mediaSizing&quot;:&quot;viewport&quot;}},&quot;translationData&quot;:{&quot;uriSEOTranslated&quot;:false},&quot;ignoreBottomBottomAnchors&quot;:true},&quot;target&quot;:&quot;_self&quot;},&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ifs9l515&quot;,&quot;displayMode&quot;:&quot;full&quot;}" data-is-svg="false" id="comp-ifs9l515img" class="ca1img">
+<!-- Logo -->
+                                                            <img id="comp-ifs9l515imgimage" style="object-position:50% 50%;width:37px;height:36px;object-fit:contain" alt="Logo" data-type="image" itemProp="image" src="CQLogo.jpg"/>
+
+                                                        </wix-image>
+
+                                                    </a>
+
+                                                </div>
+<!-- Title on Page -->
+                                                <div data-packed="true" style="top:;bottom:;left:;right:;width:251px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-ifs9egkl">
+
+                                                    <p class="font_0" style="line-height:1em;">
+
+                                                        <span><span style="letter-spacing:0.03em;">
+
+                                                            <a href="CQWOrig.html" target="_self">Communiqué</a>
+                                                        </span></span>
+
+                                                    </p>
+
+                                                </div>
+
+                                                <div id="DrpDwnMn0-jgk" class="hidden-during-prewarmup style-k42jxzg8" style="overflow-x:hidden;top:;bottom:;left:;right:;width:671px;height:30px;position:" data-stretch-buttons-to-menu-width="false" data-same-width-buttons="false" data-num-items="5" data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0" data-label-pad="0" data-ribbon-extra="0" data-drophposition="" data-dropalign="right" dir="ltr" data-state="right notMobile">
+<!-- Navigation Bar -- >
+                                                    <nav aria-label="Site" id="DrpDwnMn0-jgknavContainer" class="style-k42jxzg8navContainer">
+
+                                                        <ul style="text-align:right" id="DrpDwnMn0-jgkitemsContainer" class="style-k42jxzg8itemsContainer">
+
+                                                            <li data-direction="ltr" data-listposition="center" data-data-id="bmi1q64" class="style-k42jxzg8repeaterButton" data-state="menu selected idle link notMobile" id="DrpDwnMn0-jgk0">
+
+                                                                <a data-listposition="center" aria-haspopup="false" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" id="DrpDwnMn0-jgk0linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk0bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk0label" class="style-k42jxzg8repeaterButtonlabel">HOME</p>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li data-direction="ltr" data-listposition="center" data-data-id="bmi9k2" class="style-k42jxzg8repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-jgk1">
+
+                                                                <a data-listposition="center" aria-haspopup="false" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-keep-roots="true" data-anchor="c16ri" id="DrpDwnMn0-jgk1linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk1bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk1label" class="style-k42jxzg8repeaterButtonlabel">PRACTICE AREAS</p>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li data-direction="ltr" data-listposition="center" data-data-id="bmiohf" class="style-k42jxzg8repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-jgk2">
+
+                                                                <a data-listposition="center" aria-haspopup="false" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-keep-roots="true" data-anchor="c20of" id="DrpDwnMn0-jgk2linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk2bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk2label" class="style-k42jxzg8repeaterButtonlabel">OUR VISION</p>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ifwchdpj" class="style-k42jxzg8repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-jgk3">
+
+                                                                <a data-listposition="center" aria-haspopup="false" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-keep-roots="true" data-anchor="dataItem-ifwcgpco" id="DrpDwnMn0-jgk3linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk3bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk3label" class="style-k42jxzg8repeaterButtonlabel">ATTORNEYS</p>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li data-direction="ltr" data-listposition="right" data-data-id="bmiwa5" class="style-k42jxzg8repeaterButton" data-state="menu  idle link notMobile" id="DrpDwnMn0-jgk4">
+
+                                                                <a data-listposition="right" aria-haspopup="false" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-keep-roots="true" data-anchor="c1tez" id="DrpDwnMn0-jgk4linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk4bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk4label" class="style-k42jxzg8repeaterButtonlabel">CONTACT</p>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li data-listposition="right" class="style-k42jxzg8repeaterButton" data-state="menu  idle header notMobile" id="DrpDwnMn0-jgk__more__">
+
+                                                                <a data-listposition="right" tabindex="0" aria-haspopup="true" id="DrpDwnMn0-jgk__more__linkElement" class="style-k42jxzg8repeaterButtonlinkElement">
+
+                                                                    <div class="style-k42jxzg8repeaterButton_gapper">
+
+                                                                        <div style="text-align:center" id="DrpDwnMn0-jgk__more__bg" class="style-k42jxzg8repeaterButtonbg">
+
+                                                                            <p style="text-align:center" id="DrpDwnMn0-jgk__more__label" class="style-k42jxzg8repeaterButtonlabel">More</p>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                        </ul>
+
+                                                        <div id="DrpDwnMn0-jgkmoreButton" class="style-k42jxzg8moreButton">
+                                                        </div>
+
+                                                        <div style="visibility:hidden" data-drophposition="" data-dropalign="right" id="DrpDwnMn0-jgkdropWrapper" class="style-k42jxzg8dropWrapper"><ul style="visibility:hidden" id="DrpDwnMn0-jgkmoreContainer" class="style-k42jxzg8moreContainer">
+                                                        </ul>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div id="SITE_HEADER-placeholder" style="height:78px;display:block">
+                        </div>
+
+                        <main tabindex="-1" data-is-mobile="false" data-is-mesh="true" data-site-width="980" style="left:0;margin-left:0;width:100%;min-width:980px;top:0;bottom:;right:;position:" class="pc1" data-state="" id="PAGES_CONTAINER">
+
+                            <div style="left:0" id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground">
+                            </div>
+
+                            <div style="position:relative" id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent">
+
+                                <div style="display:none" id="PAGES_CONTAINERbg" class="pc1bg">
+                                </div>
+
+                                <div style="position:relative" id="PAGES_CONTAINERinlineContent" class="pc1inlineContent">
+
+                                    <div style="width:100%">
+
+                                        <div data-ismobile="false" data-is-mesh-layout="true" style="height:100%;left:0;position:relative;top:;bottom:;right:" class="p1" id="c1537">
+
+                                            <div style="margin-left:calc((100% - 980px) / 2);width:980px" id="c1537bg" class="p1bg">
+                                            </div>
+
+                                            <div class="p1inlineContent" id="c1537inlineContent"><style id="c1537-mesh-styles">
+    
+                                                #c1537inlineContent {
+                                                    height: auto;
+                                                    width: 100%;
+                                                    position: relative;
+                                                }
+
+                                                #c1537inlineContent-gridWrapper {
+                                                    pointer-events: none;
+                                                }
+
+                                                #c1537inlineContent-gridContainer {
+                                                    position: static;
+                                                    display: grid;
+                                                    height: auto;
+                                                    width: 100%;
+                                                    min-height: 500px;
+                                                    grid-template-rows: min-content min-content min-content min-content min-content min-content 1fr;
+                                                    grid-template-columns: 100%;
+                                                    padding-bottom: 0px;
+                                                    box-sizing: border-box;
+                                                }
+
+                                                #comp-ifs8kniv {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 1 / 1 / 2 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-j6ggtfpb {
+                                                    position: relative;
+                                                    margin: 1px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 2 / 1 / 3 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #idskjt08 {
+                                                    position: relative;
+                                                    margin: 0px 0 10px 0;
+                                                    left: 0;
+                                                    grid-area: 2 / 1 / 3 / 2;
+                                                    justify-self: stretch;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-ifsa1606 {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 3 / 1 / 4 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #idskkw5e {
+                                                    position: relative;
+                                                    margin: 0px 0 10px 0;
+                                                    left: 0;
+                                                    grid-area: 3 / 1 / 4 / 2;
+                                                    justify-self: stretch;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-ifsa7we9 {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 4 / 1 / 5 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-ifwfibx7 {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 5 / 1 / 6 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-ifwcgpcl {
+                                                    position: relative;
+                                                    margin: 0px 0 10px 0;
+                                                    left: 0;
+                                                    grid-area: 5 / 1 / 6 / 2;
+                                                    justify-self: stretch;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-ifsci2bv {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 6 / 1 / 7 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #idskl8ux {
+                                                    position: relative;
+                                                    margin: 0px 0 10px 0;
+                                                    left: 0;
+                                                    grid-area: 6 / 1 / 7 / 2;
+                                                    justify-self: stretch;
+                                                    align-self: start;
+                                                }
+
+                                                #comp-if6w0dpo {
+                                                    position: relative;
+                                                    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+                                                    left: 0px;
+                                                    grid-area: 7 / 1 / 8 / 2;
+                                                    justify-self: start;
+                                                    align-self: start;
+                                                }
+
+                                                #c1537centeredContent {
+                                                    position: relative;
+                                                }
+
+                                                #c1537inlineContent-gridContainer > * {
+                                                    pointer-events: auto;
+                                                }
+
+                                                #c1537inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+                                                    pointer-events: none;
+                                                }
+
+                                                #c1537inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+                                                    pointer-events: auto;}
+                                                </style>
+
+                                                <div id="c1537inlineContent-gridWrapper" data-mesh-internal="true">
+
+                                                    <div id="c1537inlineContent-gridContainer" data-mesh-internal="true">
+
+                                                        <section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ifs8kniv">
+
+                                                            <div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ifs8knivbalata">
+
+                                                                <div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-ifs8knivbalatabgcolor">
+
+                                                                    <div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-ifs8knivbalatabgcoloroverlay" class="bgColoroverlay">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ifs8knivinlineContent" class="strc1inlineContent">
+
+                                                                <div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsv17">
+                                                                    <div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:none;clip:rect(0,auto,auto,0);left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="BackgroundParallax" data-media-type="Image" data-use-clip-path="" data-needs-clipping="true" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsv17balata">
+                                                                        <div style="position:fixed;width:100%;height:100%;top:0;background-color:rgba(0, 48, 91, 1)" class="bgColor" id="mediairc1npsv17balatabgcolor">
+                                                                            <div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsv17balatabgcoloroverlay" class="bgColoroverlay">
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        <wix-bg-media style="position:fixed;pointer-events:none;width:100%;height:100%;top:0;left:0" data-has-bg-effect="1" data-fitting="fill" data-align="center" data-container-id="mediairc1npsv17" data-page-id="c1537" data-media-comp-type="image" id="mediairc1npsv17balatamedia" class="bgMedia">
+                                                                            <wix-image style="width:100%;height:100%;position:absolute;opacity:0.7;top:0;left:0" data-has-bg-scroll-effect="true" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifsaem8e&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;header.jpg&quot;,&quot;uri&quot;:&quot;5bfb6f_a463284fd84145f292a32dc0f0e0cc31.jpg&quot;,&quot;description&quot;:&quot;private/118a449c3f594accab65c6ca6a5240c1&quot;,&quot;width&quot;:1920,&quot;height&quot;:1200,&quot;alt&quot;:&quot;&quot;,&quot;artist&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;},&quot;opacity&quot;:0.7,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;mediairc1npsv17&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" data-type="image" id="mediairc1npsv17balatamediaimage" class="bgImage">
+
+
+<!-- Background Image #1 -->
+
+
+                                                                                <img id="mediairc1npsv17balatamediaimageimage" style="width:100%;height:100%;object-position:50% 50%;object-fit:cover" alt="" data-type="image" itemProp="image" src="BGTest1.jpg"/>
+
+                                                                            </wix-image>
+
+                                                                        </wix-bg-media>
+
+                                                                    </div>
+
+                                                                    <div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsv17inlineContent">
+
+                                                                        <style id="mediairc1npsv17-mesh-styles">
+    
+                                                                            #mediairc1npsv17inlineContent {
+                                                                                height: auto;
+                                                                                width: 100%;
+                                                                                position: relative;
+                                                                            }
+
+                                                                            #mediairc1npsv17inlineContent-gridWrapper {
+                                                                                pointer-events: none;
+                                                                            }
+
+                                                                            #mediairc1npsv17inlineContent-gridContainer {
+                                                                                position: static;
+                                                                                display: grid;
+                                                                                height: auto;
+                                                                                width: 100%;
+                                                                                min-height: auto;
+                                                                                grid-template-rows: 1fr;
+                                                                                grid-template-columns: 100%;
+                                                                            }
+
+                                                                            #idska15e {
+                                                                                position: relative;
+                                                                                margin: 0px 0px 0px calc((100% - 980px) * 0.5);
+                                                                                left: -731px;
+                                                                                grid-area: 1 / 1 / 2 / 2;
+                                                                                justify-self: start;
+                                                                                align-self: start;
+                                                                            }
+
+                                                                            #mediairc1npsv17centeredContent {
+                                                                                position: relative;
+                                                                            }
+
+                                                                            #mediairc1npsv17inlineContent-gridContainer > * {
+                                                                                pointer-events: auto;
+                                                                            }
+
+                                                                            #mediairc1npsv17inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+                                                                                pointer-events: none;
+                                                                            }
+
+                                                                            #mediairc1npsv17inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+                                                                                pointer-events: auto;}
+                                                                            </style>
+
+                                                                            <div id="mediairc1npsv17inlineContent-gridWrapper" data-mesh-internal="true">
+                                                                                <div id="mediairc1npsv17inlineContent-gridContainer" data-mesh-internal="true">
+                                                                                    <div style="top:;bottom:;left:;right:;position:" class="c2" id="idska15e">
+                                                                                        <div id="idska15ebg" class="c2bg">
+                                                                                            Checking for PoE
+                                                                                        </div>
+                                                                                        <div class="c2inlineContent" id="idska15einlineContent">
+                                                                                            <style id="idska15e-mesh-styles">
+    
+                                                                                                #idska15einlineContent {
+                                                                                                    height: auto;
+                                                                                                    width: 1085px;
+                                                                                                    position: relative;
+                                                                                                }
+
+                                                                                                #idska15einlineContent-gridWrapper {
+                                                                                                    pointer-events: none;
+                                                                                                }
+
+                                                                                                #idska15einlineContent-gridContainer {
+                                                                                                    position: static;
+                                                                                                    display: grid;
+                                                                                                    height: auto;
+                                                                                                    width: 100%;
+                                                                                                    min-height: 801px;
+                                                                                                    grid-template-rows: min-content 1fr;
+                                                                                                    grid-template-columns: 100%;
+                                                                                                }
+
+                                                                                                #idska15g_0 {
+                                                                                                    position: relative;
+                                                                                                    margin: 274px 0px 17px 0;
+                                                                                                    left: 751px;
+                                                                                                    grid-area: 1 / 1 / 2 / 2;
+                                                                                                    justify-self: start;
+                                                                                                    align-self: start;
+                                                                                                }
+
+                                                                                                #idska15g {
+                                                                                                    position: relative;
+                                                                                                    margin: 0px 0px 10px 0;
+                                                                                                    left: 751px;
+                                                                                                    grid-area: 2 / 1 / 3 / 2;
+                                                                                                    justify-self: start;
+                                                                                                    align-self: start;
+                                                                                                }
+
+                                                                                                #idska15ecenteredContent {
+                                                                                                    position: relative;
+                                                                                                }
+
+                                                                                                #idska15einlineContent-gridContainer > * {
+                                                                                                    pointer-events: auto;
+                                                                                                }
+
+                                                                                                #idska15einlineContent-gridContainer > [id$="-rotated-wrapper"] {
+                                                                                                    pointer-events: none;
+                                                                                                }
+
+                                                                                                #idska15einlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+                                                                                                    pointer-events: auto;}
+                                                                                                </style>
+                                                                                                <div id="idska15einlineContent-gridWrapper" data-mesh-internal="true">
+                                                                                                    <div id="idska15einlineContent-gridContainer" data-mesh-internal="true">
+                                                                                                        <div data-packed="false" style="top:;bottom:;left:;right:;width:307px;height:auto;position:;min-height:102px;pointer-events:none;visibility:hidden" data-min-height="102" data-hidden="true" class="txtNew" id="idska15g_0">
+                                                                                                            <h1 class="font_2" style="font-size:42px;">
+                                                                                                                <span class="color_11"><span style="font-weight:bold;"><span style="font-size:42px;"><span style="letter-spacing:0.05em;">COMMUNIQUÉ</span></span></span></span>
+                                                                                                            </h1>
+<!-- Main Heading -->
+                                                                                                        <h1 class="font_2">
+                                                                                                            <span class="color_11"><span style="letter-spacing:0.05em;">Official Soft Skills Society</span></span></h1></div><div data-packed="false" style="top:;bottom:;left:;right:;width:307px;height:auto;position:;min-height:82px;pointer-events:none;visibility:hidden" data-min-height="82" data-hidden="true" class="txtNew" id="idska15g"><p class="font_7"><span class="color_11">Specializing in Commercial Law &amp; Litigation, Insolvency &amp; Fraud</span></p>
+
+<p class="font_7" style="line-height:1.8em;">&nbsp;</p></div></div></div></div></div></div></div></div></div></div></section><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-j6ggtfpb"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-j6ggtfpbbalata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-j6ggtfpbbalatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-j6ggtfpbbalatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-j6ggtfpbinlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="comp-j6ggtfql"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:auto;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-j6ggtfqlbalata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:rgba(250, 250, 250, 1)" class="bgColor" id="comp-j6ggtfqlbalatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-j6ggtfqlbalatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="comp-j6ggtfqlinlineContent"><style id="comp-j6ggtfql-mesh-styles">
+    
+#comp-j6ggtfqlinlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#comp-j6ggtfqlinlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#comp-j6ggtfqlinlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: min-content min-content min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#idskarsh {
+    position: relative;
+    margin: 0px 0px 1px calc((100% - 980px) * 0.5);
+    left: -731px;
+    grid-area: 1 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwa6qoa1 {
+    position: relative;
+    margin: 96px 0px 10px calc((100% - 980px) * 0.5);
+    left: 380px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskcwi3 {
+    position: relative;
+    margin: 87px 0px 38px calc((100% - 980px) * 0.5);
+    left: 410px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifw9ppp2 {
+    position: relative;
+    margin: 95px 0px 10px calc((100% - 980px) * 0.5);
+    left: 705px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskdd4i {
+    position: relative;
+    margin: 87px 0px 38px calc((100% - 980px) * 0.5);
+    left: 740px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwa6qoa {
+    position: relative;
+    margin: 6px 0px 10px calc((100% - 980px) * 0.5);
+    left: 380px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskdplo_1 {
+    position: relative;
+    margin: 0px 0px 43px calc((100% - 980px) * 0.5);
+    left: 410px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwa5ikz {
+    position: relative;
+    margin: 6px 0px 10px calc((100% - 980px) * 0.5);
+    left: 705px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskdpln_0 {
+    position: relative;
+    margin: 0px 0px 43px calc((100% - 980px) * 0.5);
+    left: 740px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwa6qo5 {
+    position: relative;
+    margin: 5px 0px 10px calc((100% - 980px) * 0.5);
+    left: 380px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idske2h1_3 {
+    position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    left: 410px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwa5zen {
+    position: relative;
+    margin: 5px 0px 10px calc((100% - 980px) * 0.5);
+    left: 705px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idske2h1 {
+    position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    left: 740px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-j6ggtfqlcenteredContent {
+    position: relative;
+}
+
+#comp-j6ggtfqlinlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#comp-j6ggtfqlinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#comp-j6ggtfqlinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="comp-j6ggtfqlinlineContent-gridWrapper" data-mesh-internal="true"><div id="comp-j6ggtfqlinlineContent-gridContainer" data-mesh-internal="true"><div style="top:;bottom:;left:;right:;position:" class="style-ifsa0dyl" id="idskarsh"><div id="idskarshbg" class="style-ifsa0dylbg"></div><div class="style-ifsa0dylinlineContent" id="idskarshinlineContent"><style id="idskarsh-mesh-styles">
+    
+#idskarshinlineContent {
+    height: auto;
+    width: 1085px;
+    position: relative;
+}
+
+#idskarshinlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#idskarshinlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 555px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+#idskarsh_0 {
+    position: relative;
+    margin: 87px 0px 10px 0;
+    left: 751px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskarshcenteredContent {
+    position: relative;
+}
+
+#idskarshinlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#idskarshinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#idskarshinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="idskarshinlineContent-gridWrapper" data-mesh-internal="true"><div id="idskarshinlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:307px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="idskarsh_0"><h2 class="font_2"><span style="font-weight:bold;">PRACTICE</span></h2>
+
+<h2 class="font_2">AREAS</h2></div></div></div></div></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifwa6qoa1"><div id="comp-ifwa6qoa1link" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifwa6qoa1 style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifwa6qoa1svg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:280px;height:auto;position:;min-height:98px;pointer-events:none;visibility:hidden" data-min-height="98" data-hidden="true" class="txtNew" id="idskcwi3"><p class="font_6">LITIGATION</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9">I&#39;m a paragraph. Click here to add</p>
+
+<p class="font_9">your own text and edit me.</p></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifw9ppp2"><div id="comp-ifw9ppp2link" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifw9ppp2 style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifw9ppp2svg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:240px;height:auto;position:;min-height:98px;pointer-events:none;visibility:hidden" data-min-height="98" data-hidden="true" class="txtNew" id="idskdd4i"><p class="font_6">BUSINESS</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9" style="font-size:14px;"><span class="color_19"><span style="font-size:14px;">I&#39;m a paragraph. Click here to add</span></span></p>
+
+<p class="font_9" style="font-size:14px;"><span class="color_19"><span style="font-size:14px;">your own text and edit me.</span></span></p></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifwa6qoa"><div id="comp-ifwa6qoalink" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:rgba(144, 209, 216, 1);stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifwa6qoa style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifwa6qoasvg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:280px;height:auto;position:;min-height:99px;pointer-events:none;visibility:hidden" data-min-height="99" data-hidden="true" class="txtNew" id="idskdplo_1"><p class="font_6">INSOLVENCY</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9">I&#39;m a paragraph. Click here to add</p>
+
+<p class="font_9">your own text and edit me.</p></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifwa5ikz"><div id="comp-ifwa5ikzlink" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifwa5ikz style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifwa5ikzsvg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:240px;height:auto;position:;min-height:99px;pointer-events:none;visibility:hidden" data-min-height="99" data-hidden="true" class="txtNew" id="idskdpln_0"><p class="font_6">FRAUD</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9">I&#39;m a paragraph. Click here to add</p>
+
+<p class="font_9">your own text and edit me.</p></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifwa6qo5"><div id="comp-ifwa6qo5link" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifwa6qo5 style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifwa6qo5svg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:280px;height:auto;position:;min-height:98px;pointer-events:none;visibility:hidden" data-min-height="98" data-hidden="true" class="txtNew" id="idske2h1_3"><p class="font_6">DISPUTE RESOLUTION</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9">I&#39;m a paragraph. Click here to add</p>
+
+<p class="font_9">your own text and edit me.</p></div><div data-svg-id="162470084018985920a0c4cfb0f50d5e_svgshape.v1.Square.svg" data-svg-type="shape" data-display-mode="legacyFit" data-strokewidth="0" data-viewbox="0 0 154.023 142.529" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:10px;height:10px;position:;visibility:hidden" data-hidden="true" class="style-ifwacv3b1" id="comp-ifwa5zen"><div id="comp-ifwa5zenlink" class="style-ifwacv3b1link"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(65, 183, 196, 1)" class="style-ifwacv3b1_comp-ifwa5zen style-ifwacv3b1_non-scaling-stroke style-ifwacv3b1svg" id="comp-ifwa5zensvg"><svg preserveAspectRatio="xMidYMid meet" data-bbox="15.305 10.052 123 123" xmlns="http://www.w3.org/2000/svg" viewBox="15.305 10.052 123 123" role="img">
+    <g>
+        <path d="M138.305 10.052v123h-123v-123h123z"/>
+    </g>
+</svg>
+</div></div></div><div data-packed="false" style="top:;bottom:;left:;right:;width:240px;height:auto;position:;min-height:98px;pointer-events:none;visibility:hidden" data-min-height="98" data-hidden="true" class="txtNew" id="idske2h1"><p class="font_6">TAX</p>
+
+<p class="font_8">&nbsp;</p>
+
+<p class="font_9">I&#39;m a paragraph. Click here to add</p>
+
+<p class="font_9">your own text and edit me.</p></div></div></div></div></div></div></section><div tabindex="-1" role="region" aria-label="practice_areas" style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:20px;position:" class="AutoWidthAnchorSkin" id="idskjt08"> </div><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ifsa1606"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ifsa1606balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-ifsa1606balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-ifsa1606balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ifsa1606inlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsv11"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:auto;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsv11balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:rgba(0, 48, 91, 1)" class="bgColor" id="mediairc1npsv11balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsv11balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsv11inlineContent"><style id="mediairc1npsv11-mesh-styles">
+    
+#mediairc1npsv11inlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#mediairc1npsv11inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#mediairc1npsv11inlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 643px;
+    grid-template-rows: min-content min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#idskfcfs {
+    position: relative;
+    margin: 102px 0px 10px calc((100% - 980px) * 0.5);
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskfcfr {
+    position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    left: 32px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#mediairc1npsv11inlineContent-wedge-3 {
+    visibility: hidden;
+    height: 242px;
+    width: 0;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#mediairc1npsv11centeredContent {
+    position: relative;
+}
+
+#mediairc1npsv11inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#mediairc1npsv11inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#mediairc1npsv11inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="mediairc1npsv11inlineContent-gridWrapper" data-mesh-internal="true"><div id="mediairc1npsv11inlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:980px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="idskfcfs"><h2 class="font_2" style="text-align:center;"><span class="color_11">OUR </span><span style="font-weight:normal;"><span class="color_11">VISION</span></span></h2></div><div data-packed="true" style="top:;bottom:;left:;right:;width:916px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="idskfcfr"><p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_11"><span>I&#39;m a paragraph. Click here to add your own text and edit me. It&rsquo;s easy. Just click &ldquo;Edit Text&rdquo; or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I&rsquo;m a great place for you to tell a story and let your users know a little more about you.</span></span></p>
+
+<p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_11"><span>​</span></span></p>
+
+<p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_11"><span>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</span></span><br />
+&nbsp;</p>
+
+<p class="font_8" style="line-height:1.5em; text-align:center;"><span class="color_11"><span>At Wix we&rsquo;re passionate about making templates that allow you to build fabulous websites and it&rsquo;s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what&rsquo;s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum.</span></span></p></div><div id="mediairc1npsv11inlineContent-wedge-3" data-mesh-internal="true"></div></div></div></div></div></div></section><div tabindex="-1" role="region" aria-label="our_vision" style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:20px;position:" class="AutoWidthAnchorSkin" id="idskkw5e"> </div><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ifsa7we9"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ifsa7we9balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-ifsa7we9balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-ifsa7we9balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ifsa7we9inlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsw4"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:none;clip:rect(0,auto,auto,0);left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="BackgroundParallax" data-media-type="Image" data-use-clip-path="" data-needs-clipping="true" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsw4balata"><div style="position:fixed;width:100%;height:100%;top:0;background-color:rgba(85, 85, 85, 1)" class="bgColor" id="mediairc1npsw4balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsw4balatabgcoloroverlay" class="bgColoroverlay"></div></div><wix-bg-media style="position:fixed;pointer-events:none;width:100%;height:100%;top:0;left:0" data-has-bg-effect="1" data-fitting="fill" data-align="center" data-container-id="mediairc1npsw4" data-page-id="c1537" data-media-comp-type="image" id="mediairc1npsw4balatamedia" class="bgMedia"><wix-image style="width:100%;height:100%;position:absolute;opacity:0.6;top:0;left:0" data-has-bg-scroll-effect="true" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifsahvfd&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;strip1.jpg&quot;,&quot;uri&quot;:&quot;5bfb6f_bb013bf1966340ceb9a576d68aa42273.jpg&quot;,&quot;description&quot;:&quot;private/118a449c3f594accab65c6ca6a5240c1&quot;,&quot;width&quot;:1920,&quot;height&quot;:913,&quot;alt&quot;:&quot;&quot;,&quot;artist&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;},&quot;opacity&quot;:0.6,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;mediairc1npsw4&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" data-type="image" id="mediairc1npsw4balatamediaimage" class="bgImage"><img id="mediairc1npsw4balatamediaimageimage" style="width:100%;height:100%;object-position:50% 50%;object-fit:cover" alt="" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/5bfb6f_bb013bf1966340ceb9a576d68aa42273.jpg/v1/fill/w_245,h_117,al_c,q_80,usm_0.66_1.00_0.01,blur_2/5bfb6f_bb013bf1966340ceb9a576d68aa42273.jpg"/></wix-image></wix-bg-media></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsw4inlineContent"><style id="mediairc1npsw4-mesh-styles">
+    
+#mediairc1npsw4inlineContent {
+    height: 771px;
+    width: 100%;
+    min-height: ;
+    position: relative;
+}
+
+#mediairc1npsw4centeredContent {
+    position: relative;
+}
+
+#mediairc1npsw4inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#mediairc1npsw4inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#mediairc1npsw4inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#mediairc1npsw4inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style></div></div></div></section><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ifwfibx7"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ifwfibx7balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-ifwfibx7balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-ifwfibx7balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ifwfibx7inlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsu1"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:auto;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsu1balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:rgba(234, 244, 246, 1)" class="bgColor" id="mediairc1npsu1balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsu1balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsu1inlineContent"><style id="mediairc1npsu1-mesh-styles">
+    
+#mediairc1npsu1inlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#mediairc1npsu1inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#mediairc1npsu1inlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 718px;
+    grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#comp-ifwf47tv {
+    position: relative;
+    margin: 97px 0px 10px calc((100% - 980px) * 0.5);
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifsceiez {
+    position: relative;
+    margin: 0px 0px 22px calc((100% - 980px) * 0.5);
+    left: 100px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwg3dvs {
+    position: relative;
+    margin: 0px 0px 17px calc((100% - 980px) * 0.5);
+    left: 100px;
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwau3n6 {
+    position: relative;
+    margin: 2px 0px 23px calc((100% - 980px) * 0.5);
+    left: 100px;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifsceif3 {
+    position: relative;
+    margin: 2px 0px 10px calc((100% - 980px) * 0.5);
+    left: 100px;
+    grid-area: 6 / 1 / 7 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifscdoeg {
+    position: relative;
+    margin: 0px 0px 22px calc((100% - 980px) * 0.5);
+    left: 395px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwg376j {
+    position: relative;
+    margin: 0px 0px 17px calc((100% - 980px) * 0.5);
+    left: 395px;
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwg5qox {
+    position: relative;
+    margin: 2px 0px 23px calc((100% - 980px) * 0.5);
+    left: 394px;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwb1rqv {
+    position: relative;
+    margin: 2px 0px 10px calc((100% - 980px) * 0.5);
+    left: 396px;
+    grid-area: 6 / 1 / 7 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifsc7msf {
+    position: relative;
+    margin: 0px 0px 22px calc((100% - 980px) * 0.5);
+    left: 690px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwb3wlw {
+    position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    left: 690px;
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwg5zsy {
+    position: relative;
+    margin: 0px 0px 25px calc((100% - 980px) * 0.5);
+    left: 692px;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifwg5zsv {
+    position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    left: 688px;
+    grid-area: 6 / 1 / 7 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#mediairc1npsu1inlineContent-wedge-3 {
+    visibility: hidden;
+    height: 237px;
+    width: 0;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#mediairc1npsu1centeredContent {
+    position: relative;
+}
+
+#mediairc1npsu1inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#mediairc1npsu1inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#mediairc1npsu1inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="mediairc1npsu1inlineContent-gridWrapper" data-mesh-internal="true"><div id="mediairc1npsu1inlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:980px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwf47tv"><h2 class="font_2" style="text-align:center;"><span class="color_20">OUR&nbsp;<span style="font-weight:normal;">ATTORNEYS</span></span></h2></div><div style="top:;bottom:;left:;right:;width:192px;height:222px;position:;visibility:hidden" title="" data-is-responsive="false" data-display-mode="fill" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="222" data-hidden="true" class="ca1" id="comp-ifsceiez"><div style="width:192px;height:222px" id="comp-ifsceiezlink" class="ca1link"><wix-image style="width:192px;height:222px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifsceiez1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;5bfb6f_5577b01919214f47ad5236247965ec04.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:600,&quot;height&quot;:800,&quot;alt&quot;:&quot;Team Member Image&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ifsceiez&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" id="comp-ifsceiezimg" class="ca1img"><img id="comp-ifsceiezimgimage" style="object-position:50% 50%;width:192px;height:222px;object-fit:cover" alt="Team Member Image" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/5bfb6f_5577b01919214f47ad5236247965ec04.jpg/v1/fill/w_167,h_222,al_c,q_80,usm_0.66_1.00_0.01,blur_3/5bfb6f_5577b01919214f47ad5236247965ec04.jpg"/></wix-image></div></div><div data-packed="true" style="top:;bottom:;left:;right:;width:192px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwg3dvs"><h6 class="font_6" style="text-align:center;"><span style="letter-spacing:0.4px;">AIDEN WALTERS</span></h6>
+
+<h6 class="font_6" style="text-align:center;"><span class="color_19"><span style="font-size:16px;">PARTNER</span></span></h6></div><div data-border-width="1px" style="transform-origin:center 0.5px;top:;bottom:;left:;right:;width:192px;height:5px;position:;visibility:hidden" data-hidden="true" class="style-ifwav2c9" id="comp-ifwau3n6"></div><div data-packed="true" style="top:;bottom:;left:;right:;width:192px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifsceif3"><p style="text-align:center; font-size:16px;" class="font_8"><span class="color_20"><span style="font-size:16px;">Tel: 123-456-7890</span></span></p>
+
+<p style="text-align:center; font-size:16px;" class="font_8"><span class="color_20"><span style="font-size:16px;"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="info@mysite.com" href="mailto:info@mysite.com" data-type="mail">info@mysite.com</a></object></span></span></p>
+</div><div style="top:;bottom:;left:;right:;width:192px;height:222px;position:;visibility:hidden" title="" data-is-responsive="false" data-display-mode="fill" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="222" data-hidden="true" class="ca1" id="comp-ifscdoeg"><div style="width:192px;height:222px" id="comp-ifscdoeglink" class="ca1link"><wix-image style="width:192px;height:222px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifscdoei&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;5bfb6f_60ff20475dbc447f92c81fdcc6a6a7c1.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:600,&quot;height&quot;:800,&quot;alt&quot;:&quot;Team Member Image&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ifscdoeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" id="comp-ifscdoegimg" class="ca1img"><img id="comp-ifscdoegimgimage" style="object-position:50% 50%;width:192px;height:222px;object-fit:cover" alt="Team Member Image" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/5bfb6f_60ff20475dbc447f92c81fdcc6a6a7c1.jpg/v1/fill/w_167,h_222,al_c,q_80,usm_0.66_1.00_0.01,blur_3/5bfb6f_60ff20475dbc447f92c81fdcc6a6a7c1.jpg"/></wix-image></div></div><div data-packed="true" style="top:;bottom:;left:;right:;width:189px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwg376j"><h6 class="font_6" style="text-align:center;"><span style="letter-spacing:0.4px;">JULIA KNOLL</span></h6>
+
+<h6 class="font_6" style="text-align:center;"><span class="color_19"><span style="font-size:16px;">PARTNER</span></span></h6></div><div data-border-width="1px" style="transform-origin:center 0.5px;top:;bottom:;left:;right:;width:192px;height:5px;position:;visibility:hidden" data-hidden="true" class="style-ifwav2c9" id="comp-ifwg5qox"></div><div data-packed="true" style="top:;bottom:;left:;right:;width:190px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwb1rqv"><p style="text-align:center;" class="font_8">Tel: 123-456-7890</p>
+
+<p style="text-align:center;" class="font_8"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="info@mysite.com" href="mailto:info@mysite.com" data-type="mail">info@mysite.com</a></object></p>
+</div><div style="top:;bottom:;left:;right:;width:192px;height:222px;position:;visibility:hidden" title="" data-is-responsive="false" data-display-mode="fill" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="222" data-hidden="true" class="ca1" id="comp-ifsc7msf"><div style="width:192px;height:222px" id="comp-ifsc7msflink" class="ca1link"><wix-image style="width:192px;height:222px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifsc7msg&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;5bfb6f_1cafad56984b4997bd73792b008c6fc3.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:600,&quot;height&quot;:800,&quot;alt&quot;:&quot;Team Member Image&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ifsc7msf&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" id="comp-ifsc7msfimg" class="ca1img"><img id="comp-ifsc7msfimgimage" style="object-position:50% 50%;width:192px;height:222px;object-fit:cover" alt="Team Member Image" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/5bfb6f_1cafad56984b4997bd73792b008c6fc3.jpg/v1/fill/w_167,h_222,al_c,q_80,usm_0.66_1.00_0.01,blur_3/5bfb6f_1cafad56984b4997bd73792b008c6fc3.jpg"/></wix-image></div></div><div data-packed="true" style="top:;bottom:;left:;right:;width:190px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwb3wlw"><h6 class="font_6" style="line-height:1.5em; text-align:center;"><span><span style="letter-spacing:0.02em;">JAMES LOPEZ</span></span></h6>
+
+<h6 class="font_6" style="line-height:1.5em; text-align:center;"><span class="color_19"><span style="font-size:16px;">PARTNER</span></span></h6></div><div data-border-width="1px" style="transform-origin:center 0.5px;top:;bottom:;left:;right:;width:192px;height:5px;position:;visibility:hidden" data-hidden="true" class="style-ifwav2c9" id="comp-ifwg5zsy"></div><div data-packed="true" style="top:;bottom:;left:;right:;width:190px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifwg5zsv"><p style="text-align:center;" class="font_8">Tel: 123-456-7890</p>
+
+<p style="text-align:center;" class="font_8"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="info@mysite.com" href="mailto:info@mysite.com" data-type="mail">info@mysite.com</a></object></p>
+</div><div id="mediairc1npsu1inlineContent-wedge-3" data-mesh-internal="true"></div></div></div></div></div></div></section><div tabindex="-1" role="region" aria-label="ATTORNEYS" style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:21px;position:" class="AutoWidthAnchorSkin" id="comp-ifwcgpcl"> </div><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ifsci2bv"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ifsci2bvbalata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-ifsci2bvbalatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-ifsci2bvbalatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ifsci2bvinlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsv5"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:none;clip:rect(0,auto,auto,0);left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="BackgroundParallax" data-media-type="Image" data-use-clip-path="" data-needs-clipping="true" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsv5balata"><div style="position:fixed;width:100%;height:100%;top:0;background-color:rgba(15, 76, 133, 1)" class="bgColor" id="mediairc1npsv5balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsv5balatabgcoloroverlay" class="bgColoroverlay"></div></div><wix-bg-media style="position:fixed;pointer-events:none;width:100%;height:100%;top:0;left:0" data-has-bg-effect="1" data-fitting="fill" data-align="center" data-container-id="mediairc1npsv5" data-page-id="c1537" data-media-comp-type="image" id="mediairc1npsv5balatamedia" class="bgMedia"><wix-image style="width:100%;height:100%;position:absolute;opacity:0.1;top:0;left:0" data-has-bg-scroll-effect="true" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifwgd4d2&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;strip4.jpg&quot;,&quot;uri&quot;:&quot;5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg&quot;,&quot;description&quot;:&quot;private/allMedia_picture&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;&quot;,&quot;artist&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;},&quot;opacity&quot;:0.1,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;mediairc1npsv5&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" data-type="image" id="mediairc1npsv5balatamediaimage" class="bgImage"><img id="mediairc1npsv5balatamediaimageimage" style="width:100%;height:100%;object-position:50% 50%;object-fit:cover" alt="" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg/v1/fill/w_245,h_138,al_c,q_80,usm_0.66_1.00_0.01,blur_2/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg"/></wix-image></wix-bg-media></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsv5inlineContent"><style id="mediairc1npsv5-mesh-styles">
+    
+#mediairc1npsv5inlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#mediairc1npsv5inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#mediairc1npsv5inlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: min-content min-content min-content min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#comp-ifsbmxmp {
+    position: relative;
+    margin: 0px 0px -240px calc((100% - 980px) * 0.5);
+    left: -2178px;
+    grid-area: 1 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskgsri {
+    position: relative;
+    margin: 133px 0px 34px calc((100% - 980px) * 0.5);
+    left: 358px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idskgsrh {
+    position: relative;
+    margin: 0px 0px 42px calc((100% - 980px) * 0.5);
+    left: 358px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ighrku05 {
+    position: relative;
+    margin: 0px 0px 15px calc((100% - 980px) * 0.5);
+    left: 357px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8egl4 {
+    position: relative;
+    margin: 0px 0px 63px calc((100% - 980px) * 0.5);
+    left: 350px;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#mediairc1npsv5centeredContent {
+    position: relative;
+}
+
+#mediairc1npsv5inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#mediairc1npsv5inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#mediairc1npsv5inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="mediairc1npsv5inlineContent-gridWrapper" data-mesh-internal="true"><div id="mediairc1npsv5inlineContent-gridContainer" data-mesh-internal="true"><div style="top:;bottom:;left:;right:;position:" class="style-jkksayet" id="comp-ifsbmxmp"><div id="comp-ifsbmxmpbg" class="style-jkksayetbg"></div><div class="style-jkksayetinlineContent" id="comp-ifsbmxmpinlineContent"><style id="comp-ifsbmxmp-mesh-styles">
+    
+#comp-ifsbmxmpinlineContent {
+    height: auto;
+    width: 2500px;
+    position: relative;
+}
+
+#comp-ifsbmxmpinlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#comp-ifsbmxmpinlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 638px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+#comp-ifsbmxmy {
+    position: relative;
+    margin: 123px 0px 10px 0;
+    left: 2198px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-ifsbmxmpcenteredContent {
+    position: relative;
+}
+
+#comp-ifsbmxmpinlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#comp-ifsbmxmpinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#comp-ifsbmxmpinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="comp-ifsbmxmpinlineContent-gridWrapper" data-mesh-internal="true"><div id="comp-ifsbmxmpinlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:282px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ifsbmxmy"><p class="font_2"><span class="color_11">CONTACT</span></p>
+
+<p class="font_2"><span class="color_11"><span style="font-weight:normal;">KNOLL &amp; </span></span><span class="color_11"><span style="font-weight:normal;">WALTERS</span></span></p></div></div></div></div></div><div data-packed="true" style="top:;bottom:;left:;right:;width:399px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="idskgsri"><p class="font_6"><span class="color_11"><span style="font-weight:bold;">OUR</span> ADDRESS</span></p></div><div data-packed="true" style="top:;bottom:;left:;right:;width:544px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="idskgsrh"><p class="font_8" style="line-height:1.5em;"><span class="color_11">500 Terry Francois St.&nbsp;San Francisco, CA 94158​</span></p>
+
+<p class="font_8" style="line-height:1.5em;"><span class="color_11"><span style="font-weight:bold;">Email:</span> <object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="info@mysite.com" href="mailto:info@mysite.com" data-type="mail">info@mysite.com</a></object><br>
+<span style="font-weight:bold;">Tel: </span>&nbsp;123-456-7890</span></p>
+
+<p class="font_8" style="line-height:1.5em;">&nbsp;</p>
+
+<p class="font_7" style="line-height:1.5em;"><span class="color_11"><a href="https://www.wix.com/demone2/boutique-law-firm/map" target="_self">Click Here to Find Us</a></span></p></div><div data-packed="true" style="top:;bottom:;left:;right:;width:616px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-ighrku05"><p class="font_8" style="line-height:1.5em;"><span class="color_11">For any general inquiries, please fill in the following contact form:</span></p></div><div style="top:;bottom:;left:;right:;position:" class="appWidget1" id="comp-jxd8egl4"><div class="appWidget1inlineContent" id="comp-jxd8egl4inlineContent"><style id="comp-jxd8egl4-mesh-styles">
+    
+#comp-jxd8egl4inlineContent {
+    height: auto;
+    width: 622px;
+    position: relative;
+}
+
+#comp-jxd8egl4inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#comp-jxd8egl4inlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+#comp-jxd8fww6 {
+    position: relative;
+    margin: 0px 0px 0px 0;
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8egl4centeredContent {
+    position: relative;
+}
+
+#comp-jxd8egl4inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#comp-jxd8egl4inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#comp-jxd8egl4inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="comp-jxd8egl4inlineContent-gridWrapper" data-mesh-internal="true"><div id="comp-jxd8egl4inlineContent-gridContainer" data-mesh-internal="true"><div data-is-responsive="false" style="top:;bottom:;left:;right:;position:" class="style-jxd8fwwl" id="comp-jxd8fww6"><form class="style-jxd8fwwlform" id="comp-jxd8fww6form"><style id="comp-jxd8fww6-mesh-styles">
+    
+#comp-jxd8fww6form {
+    height: auto;
+    width: 622px;
+    position: relative;
+}
+
+#comp-jxd8fww6form-gridWrapper {
+    pointer-events: none;
+}
+
+#comp-jxd8fww6form-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#comp-jxd8fwws {
+    position: relative;
+    margin: 6px 0px 6px 0;
+    left: 8px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fwz8 {
+    position: relative;
+    margin: 0px 0px 7px 0;
+    left: 8px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fx0q {
+    position: relative;
+    margin: 0px 0px 13px 0;
+    left: 8px;
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fx21 {
+    position: relative;
+    margin: 7px 0px 13px 0;
+    left: 331px;
+    grid-area: 1 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fx3l {
+    position: relative;
+    margin: 0px 0px 7px 0;
+    left: 7px;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fx52 {
+    position: relative;
+    margin: 0px 0px 8px 0;
+    left: 56px;
+    grid-area: 6 / 1 / 7 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#comp-jxd8fww6centeredContent {
+    position: relative;
+}
+
+#comp-jxd8fww6form-gridContainer > * {
+    pointer-events: auto;
+}
+
+#comp-jxd8fww6form-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#comp-jxd8fww6form-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="comp-jxd8fww6form-gridWrapper" data-mesh-internal="true"><div id="comp-jxd8fww6form-gridContainer" data-mesh-internal="true"><div class="style-jxd8fwxb_required style-jxd8fwxb_left-direction style-jxd8fwxb" data-disabled="false" style="top:;bottom:;left:;right:;width:300px;height:55px;position:" id="comp-jxd8fwws"><label style="padding-left:0;padding-right:20px;display:inline-block;margin-bottom:9px;text-align:left;direction:ltr" for="comp-jxd8fwwsinput" id="comp-jxd8fwwslabel" class="style-jxd8fwxblabel">Enter Your Name</label><input type="text" style="padding-left:12px" value="" required="" placeholder="Name" maxLength="100" class="has-custom-focus style-jxd8fwxbinput" id="comp-jxd8fwwsinput"/><p style="display:none" id="comp-jxd8fwwsmessage" class="style-jxd8fwxbmessage"></p></div><div class="style-jxd8fwxb_required style-jxd8fwxb_left-direction style-jxd8fwxb" data-disabled="false" style="top:;bottom:;left:;right:;width:300px;height:55px;position:" id="comp-jxd8fwz8"><label style="padding-left:0;padding-right:20px;display:inline-block;margin-bottom:9px;text-align:left;direction:ltr" for="comp-jxd8fwz8input" id="comp-jxd8fwz8label" class="style-jxd8fwxblabel">Enter Your Email</label><input type="email" style="padding-left:12px" value="" required="" placeholder="Email" maxLength="250" class="has-custom-focus style-jxd8fwxbinput" id="comp-jxd8fwz8input"/><p style="display:none" id="comp-jxd8fwz8message" class="style-jxd8fwxbmessage"></p></div><div class="style-jxd8fwxb_required style-jxd8fwxb_left-direction style-jxd8fwxb" data-disabled="false" style="top:;bottom:;left:;right:;width:300px;height:55px;position:" id="comp-jxd8fx0q"><label style="padding-left:0;padding-right:20px;display:inline-block;margin-bottom:9px;text-align:left;direction:ltr" for="comp-jxd8fx0qinput" id="comp-jxd8fx0qlabel" class="style-jxd8fwxblabel">Enter Your Subject</label><input type="text" style="padding-left:12px" value="" required="" placeholder="Subject" class="has-custom-focus style-jxd8fwxbinput" id="comp-jxd8fx0qinput"/><p style="display:none" id="comp-jxd8fx0qmessage" class="style-jxd8fwxbmessage"></p></div><div class="style-jxd8fx2h1_required style-jxd8fx2h1_left-direction style-jxd8fx2h1" style="top:;bottom:;left:;right:;width:282px;height:177px;position:" data-state="valid" id="comp-jxd8fx21"><label style="padding-left:0;padding-right:20px;display:inline-block;margin-bottom:9px;text-align:left;direction:ltr" for="comp-jxd8fx21textarea" id="comp-jxd8fx21label" class="style-jxd8fx2h1label">Enter Your Message Here</label><textarea style="padding-left:16px;padding-right:10px" placeholder="Message" required="" class="has-custom-focus style-jxd8fx2h1textarea" id="comp-jxd8fx21textarea"></textarea></div><div id="comp-jxd8fx3l" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="606" data-height="30" style="top:;bottom:;left:;right:;width:606px;height:30px;position:;cursor:pointer" class="style-k42jw3p9" data-state="desktop shouldUseFlex center"><button style="cursor:pointer" id="comp-jxd8fx3llink" class="g-transparent-a style-k42jw3p9link"><span id="comp-jxd8fx3llabel" class="style-k42jw3p9label">Submit</span></button></div><div data-packed="true" style="top:;bottom:;left:;right:;width:510px;height:auto;position:;pointer-events:none;visibility:hidden" data-hidden="true" class="txtNew" id="comp-jxd8fx52"><p class="font_8" style="font-size:14px; text-align:center;"><span class="color_16"><span style="font-size:14px;">Thanks for submitting!</span></span></p></div></div></div></form></div></div></div></div></div></div></div></div></div></div></section><div tabindex="-1" role="region" aria-label="contact" style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:20px;position:" class="AutoWidthAnchorSkin" id="idskl8ux"> </div><section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-if6w0dpo"><div style="position:absolute;top:0;width:calc(100% - 0px);height:100%;overflow:hidden;pointer-events:auto;min-width:980px;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-if6w0dpobalata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-if6w0dpobalatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-if6w0dpobalatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-if6w0dpoinlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc1npsw10"><div style="position:absolute;top:0;width:100%;height:100%;overflow:hidden;pointer-events:auto;left:0;right:0;bottom:0" data-page-id="c1537" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="mediairc1npsw10balata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:rgba(0, 48, 91, 1)" class="bgColor" id="mediairc1npsw10balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc1npsw10balatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc1npsw10inlineContent"><style id="mediairc1npsw10-mesh-styles">
+    
+#mediairc1npsw10inlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#mediairc1npsw10inlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#mediairc1npsw10inlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 100%;
+}
+
+#idski2fy {
+    position: relative;
+    left: 477px;
+    top: 0px;
+}
+
+#idski2fy-rotated-wrapper {
+    position: static;
+    height: 22px;
+    width: 0;
+    margin: 20px 0px 7px calc((100% - 980px) * 0.5);
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#idski2g0 {
+    position: relative;
+    margin: 0px 0px 21px calc((100% - 980px) * 0.5);
+    left: 357px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#mediairc1npsw10centeredContent {
+    position: relative;
+}
+
+#mediairc1npsw10inlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#mediairc1npsw10inlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#mediairc1npsw10inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="mediairc1npsw10inlineContent-gridWrapper" data-mesh-internal="true"><div id="mediairc1npsw10inlineContent-gridContainer" data-mesh-internal="true"><div id="idski2fy-rotated-wrapper" data-mesh-internal="true"><div style="top:;bottom:;left:;right:;width:32px;height:21px;position:;transform:rotate(180deg)" title="" data-is-responsive="false" data-display-mode="full" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="21" data-angle="180" class="ca1" id="idski2fy"><a style="cursor:pointer;width:32px;height:21px" href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-keep-roots="true" data-anchor="SCROLL_TO_TOP" id="idski2fylink" class="ca1link"><wix-image style="width:32px;height:21px;top:0;left:0" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;cjm4&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;dbbdc91820535cbbeb0664011cb93255.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:33,&quot;height&quot;:17,&quot;alt&quot;:&quot;&quot;,&quot;link&quot;:{&quot;type&quot;:&quot;AnchorLink&quot;,&quot;id&quot;:&quot;1zpe&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;c1537&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;anchorName&quot;:&quot;Scroll to Top&quot;,&quot;pageId&quot;:{&quot;type&quot;:&quot;Document&quot;,&quot;id&quot;:&quot;masterPage&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;siteName&quot;:&quot;Template Base&quot;,&quot;mainPage&quot;:{&quot;type&quot;:&quot;Page&quot;,&quot;id&quot;:&quot;c1537&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;HOME&quot;,&quot;hideTitle&quot;:true,&quot;icon&quot;:&quot;&quot;,&quot;descriptionSEO&quot;:&quot;&quot;,&quot;metaKeywordsSEO&quot;:&quot;&quot;,&quot;pageTitleSEO&quot;:&quot;&quot;,&quot;pageUriSEO&quot;:&quot;home&quot;,&quot;hidePage&quot;:false,&quot;isMobileLandingPage&quot;:false,&quot;underConstruction&quot;:false,&quot;tpaApplicationId&quot;:0,&quot;pageSecurity&quot;:{&quot;requireLogin&quot;:false,&quot;passwordDigest&quot;:&quot;&quot;,&quot;dialogLanguage&quot;:&quot;&quot;},&quot;isPopup&quot;:false,&quot;indexable&quot;:true,&quot;isLandingPage&quot;:false,&quot;pageBackgrounds&quot;:{&quot;desktop&quot;:{&quot;custom&quot;:true,&quot;ref&quot;:{&quot;type&quot;:&quot;BackgroundMedia&quot;,&quot;id&quot;:&quot;customBgImg22n1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;color&quot;:&quot;{color_11}&quot;,&quot;alignType&quot;:&quot;bottom&quot;,&quot;fittingType&quot;:&quot;legacy_tile&quot;,&quot;scrollType&quot;:&quot;scroll&quot;},&quot;isPreset&quot;:true},&quot;mobile&quot;:{&quot;custom&quot;:true,&quot;ref&quot;:{&quot;type&quot;:&quot;BackgroundMedia&quot;,&quot;id&quot;:&quot;customBgImg1hsr&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;color&quot;:&quot;{color_11}&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;fittingType&quot;:&quot;legacy_tile&quot;,&quot;scrollType&quot;:&quot;scroll&quot;},&quot;isPreset&quot;:true,&quot;mediaSizing&quot;:&quot;viewport&quot;}},&quot;translationData&quot;:{&quot;uriSEOTranslated&quot;:false},&quot;ignoreBottomBottomAnchors&quot;:true},&quot;mainPageId&quot;:&quot;c1537&quot;,&quot;renderModifiers&quot;:{&quot;pageAutoShrink&quot;:true},&quot;characterSets&quot;:[&quot;latin&quot;],&quot;usedFonts&quot;:[&quot;open sans&quot;,&quot;raleway&quot;],&quot;ignoreBottomBottomAnchors&quot;:true,&quot;accessibilitySettings&quot;:{&quot;visualFocusDisabled&quot;:false},&quot;layoutSettings&quot;:{&quot;useDesktopSectionsLayout&quot;:true,&quot;mechanism&quot;:&quot;mesh&quot;,&quot;soapCompsAroundPagesContainer&quot;:true},&quot;styleSettings&quot;:{&quot;stylesPerPage&quot;:&quot;1.0&quot;},&quot;mobileSettings&quot;:{&quot;animationsEnabled&quot;:false}},&quot;anchorDataId&quot;:&quot;SCROLL_TO_TOP&quot;},&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;idski2fy&quot;,&quot;displayMode&quot;:&quot;full&quot;}" data-is-svg="false" id="idski2fyimg" class="ca1img"><img id="idski2fyimgimage" style="object-position:50% 50%;width:32px;height:21px;object-fit:contain" alt="" data-type="image" itemProp="image" src="https://static.wixstatic.com/media/dbbdc91820535cbbeb0664011cb93255.png/v1/fill/w_32,h_16,al_c,usm_0.66_1.00_0.01,blur_3/dbbdc91820535cbbeb0664011cb93255.png"/></wix-image></a></div></div><div data-packed="true" style="top:;bottom:;left:;right:;width:275px;height:auto;position:;pointer-events:none" class="txtNew" id="idski2g0"><p class="font_8" style="text-align:center;"><a href="https://www.wix.com/demone2/boutique-law-firm" target="_self" data-anchor="SCROLL_TO_TOP"><span class="color_11">BACK TO&nbsp;TOP</span></a></p></div></div></div></div></div></div></section></div></div></div></div></div></div></div></main><div style="top:932px;bottom:;left:844px;right:;width:376px;height:70px;position:fixed;overflow:hidden;visibility:hidden;min-height:70px;min-width:376px;z-index:50" data-has-iframe="true" data-horizontal-margin="0" data-vertical-margin="0" data-placement="BOTTOM_RIGHT" class="style-jgf1eeq7" id="comp-jgf1c6p6"><iframe data-src="https://engage.wixapps.net/chat-widget-server/renderChatWidget/index?cacheKiller=1578300795868&amp;compId=comp-jgf1c6p6&amp;deviceType=desktop&amp;height=70&amp;instance=D3vXAgs6i_MXPWAR6c6L4h3Mg3Y9zWGsMSG02nFl664.eyJpbnN0YW5jZUlkIjoiNmZiMGM2OTktNjM5Ny00YjM1LTg3NjItZmNhZjMzMGJjYTkwIiwiYXBwRGVmSWQiOiIxNDUxN2UxYS0zZmYwLWFmOTgtNDA4ZS0yYmQ2OTUzYzM2YTIiLCJtZXRhU2l0ZUlkIjoiOWQzMWZlMDktMzdiNS00NmEwLWE0ZGEtNzM4N2JjYjU4NTU3Iiwic2lnbkRhdGUiOiIyMDIwLTAxLTEwVDA5OjM4OjU1Ljg0MFoiLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiI0NjU0YzgxMi0zODhmLTQ2MWEtOTgyZS1lZmQ4MTc2ZTQ3OTQiLCJhaWQiOiIyNzU0OWI0YS1hYTU1LTQ2NDgtYTJlYy1hMzRlZjQwNDQ4ODUiLCJiaVRva2VuIjoiZjI4MTM4OTAtNTQyMi0wZDk1LTIzYjgtOGYyODhmYmU0ZmM3Iiwic2l0ZU93bmVySWQiOiI4NDc3MGY2Ny1lY2JkLTQ0YjYtYjM1YS01ODRmMmRjMTVhZjEiLCJzaXRlSXNUZW1wbGF0ZSI6dHJ1ZX0&amp;locale=en&amp;pageId=masterPage&amp;siteRevision=171&amp;viewMode=site&amp;width=376" scrolling="no" frameBorder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true" allowfullscreen="" name="comp-jgf1c6p6" style="width:376px;height:70px;min-height:70px;min-width:376px;display:block;position:absolute;z-index:" title="Wix Chat" aria-label="Wix Chat" id="comp-jgf1c6p6iframe" class="style-jgf1eeq7iframe"></iframe><div id="comp-jgf1c6p6overlay" class="style-jgf1eeq7overlay"></div></div><footer style="bottom:auto;left:0;margin-left:0;width:100%;min-width:980px;top:;right:;position:" class="style-ig6dzsjy_footer style-ig6dzsjy" tabindex="-1" data-site-width="980" data-fixedposition="false" data-isrunninginmobile="false" data-state=" " id="SITE_FOOTER"><div style="left:0;width:100%" id="SITE_FOOTERscreenWidthBackground" class="style-ig6dzsjyscreenWidthBackground"></div><div style="width:100%" id="SITE_FOOTERcenteredContent" class="style-ig6dzsjycenteredContent"><div style="margin-left:calc((100% - 980px) / 2);width:980px" id="SITE_FOOTERbg" class="style-ig6dzsjybg"></div><div id="SITE_FOOTERinlineContent" class="style-ig6dzsjyinlineContent"><style id="SITE_FOOTER-mesh-styles">
+    
+#SITE_FOOTERinlineContent {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#SITE_FOOTERinlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#SITE_FOOTERinlineContent-gridContainer {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+#i6buxfuz {
+    position: relative;
+    margin: 38px 0px 37px calc((100% - 980px) * 0.5);
+    left: -64px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#i4e39h8s {
+    position: relative;
+    margin: 38px 0px 33px calc((100% - 980px) * 0.5);
+    left: 911px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+#SITE_FOOTERcenteredContent {
+    position: relative;
+}
+
+#SITE_FOOTERinlineContent-gridContainer > * {
+    pointer-events: auto;
+}
+
+#SITE_FOOTERinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#SITE_FOOTERinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+    pointer-events: auto;
+}</style><div id="SITE_FOOTERinlineContent-gridWrapper" data-mesh-internal="true"><div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:568px;height:auto;position:;pointer-events:none" class="txtNew" id="i6buxfuz"><p style="text-align:center;" class="font_9">© 2023 by Knoll &amp; Walters LLP. Proudly created with&nbsp;<span style="text-decoration:underline;"><a href="http://wix.com/?utm_campaign=vir_created_with" target="_blank" data-content="http://wix.com/?utm_campaign=vir_created_with" data-type="external" rel="nofollow noopener noreferrer">Wix.com</a></span></p>
+</div><div data-is-responsive="false" style="width:51px;height:23px;top:;bottom:;left:;right:;position:" data-hide-prejs="true" class="lb1" id="i4e39h8s"><ul aria-label="Social bar" id="i4e39h8sitemsContainer" class="lb1itemsContainer"><li style="width:23px;height:23px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="i4e39h8s0image"><a href="https://www.linkedin.com/company/wix-com" target="_blank" data-content="https://www.linkedin.com/company/wix-com" data-type="external" rel="nofollow noopener noreferrer" id="i4e39h8s0imagelink" class="lb1imageItemlink"><wix-image style="width:23px;height:23px;position:absolute" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ifwbi7as&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;LinkedIn Social Icon&quot;,&quot;uri&quot;:&quot;48a2a42b19814efaa824450f23e8a253.png&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;LinkedIn Social Icon&quot;,&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-ig6ozyp6&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.linkedin.com/company/wix-com&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;i4e39h8s&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" id="i4e39h8s0imageimage" class="lb1imageItemimage"><img id="i4e39h8s0imageimageimage" alt="LinkedIn Social Icon" data-type="image" itemProp="image"/></wix-image></a></li><li style="width:23px;height:23px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="i4e39h8s1image"><a href="http://www.twitter.com/wix" target="_blank" data-content="http://www.twitter.com/wix" data-type="external" rel="nofollow noopener noreferrer" id="i4e39h8s1imagelink" class="lb1imageItemlink"><wix-image style="width:23px;height:23px;position:absolute" data-has-bg-scroll-effect="" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;image13yi&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Twitter Social Icon&quot;,&quot;uri&quot;:&quot;9c4b521dd2404cd5a05ed6115f3a0dc8.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Twitter Social Icon&quot;,&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;1drk&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;http://www.twitter.com/wix&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;i4e39h8s&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" id="i4e39h8s1imageimage" class="lb1imageItemimage"><img id="i4e39h8s1imageimageimage" alt="Twitter Social Icon" data-type="image" itemProp="image"/></wix-image></a></li></ul></div></div></div></div></div></footer></div></div><div id="aspectCompsContainer" class="siteAspectsContainer"><div style="position:absolute" id="popoverLayer"></div></div><div id="SCROLL_TO_BOTTOM" tabindex="-1" aria-label="bottom of page" role="region" style="height:0"></div>
+
+        </div>
+
+        <div class="font-ruler-container" style="overflow:hidden;visibility:hidden;max-height:0;max-width:0;position:absolute">
+            <style>
+            .font-ruler-content::after {content:"@#$%%^&*~IAO"}
+            </style>
+
+            <div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+                <div style="position:relative;white-space:nowrap;font-family:serif">
+                    <div style="position:absolute;width:100%;height:100%;overflow:hidden">
+                        <div>
+                        </div>
+                    </div>
+
+                    <span class="font-ruler-content"></span>
+                </div>
+            </div>
+
+            <div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+
+                <div style="position:relative;white-space:nowrap;font-family:serif">
+
+                    <div style="position:absolute;width:100%;height:100%;overflow:hidden">
+
+                        <div>
+                            
+                        </div>
+                    </div>
+
+                    <span class="font-ruler-content"></span>
+
+                </div>
+            </div>
+
+            <div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+                <div style="position:relative;white-space:nowrap;font-family:serif">
+                    <div style="position:absolute;width:100%;height:100%;overflow:hidden">
+                        <div></div>
+                    </div>
+                    <span class="font-ruler-content"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
